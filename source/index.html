@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отдых и гостиницы в Седоне (Аризона, США)</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/outline.css">
+</head>
 
-  </body>
+<body class="page">
+
+  <header class="header page__header">
+    <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+    <nav class="page-header__nav page-header__nav--hidden">
+      <button class="page-header__toggle page-header__toggle--active" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <img class="menu-btn__img" src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+      </button>
+      <ul class="page-header__list">
+        <li class="page-header__item"><a>Главная</a></li>
+        <li class="page-header__item"><a>Фото и видео</a></li>
+        <li class="page-header__item"><a>Форма отзыва</a></li>
+        <li class="page-header__item"><a>HTML Academy</a></li>
+      </ul>
+    </nav>
+    <div class="page-header__cover">
+      <img class="page-header__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
+        height="214">
+      <img class="page-header__shaving" src="img/left-vector.svg" alt="Белый фон" width="600" height="57">
+      <img class="page-header__shaving" src="img/right-vector.svg" alt="Белый фон" width="600" height="57">
+    </div>
+  </header>
+
+  <main class="main page__main">
+    <h1 class="visually-hidden">Приезжайте в Седону - настоящий город Запада рядом с Мостом Дьявола</h1>
+
+    <article class="article container">
+      <header class="article__header">
+        <h2 class="article__title title-size">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </header>
+      <ul class="article__reason-list">
+        <li class="article__reason-item">
+          <div class="reason reason--blue">
+            <h2 class="reason__title">Настоящий городок</h2>
+            <p class="reason__number">&#8212; №1 &#8212;</p>
+            <p class="reason__tagline">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="reason__shaving-mobile" src="img/left-white.svg" alt="Белый фон" width="384" height="37">
+          <img class="reason__shaving-mobile" src="img/right-white.svg" alt="Белый фон" width="384" height="37">
+          <div class="reason__detail">
+            <h2 class="title-size">Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+          </div>
+          <div class="reason__detail">
+            <h2 class="title-size">Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="reason__detail">
+            <h2 class="title-size">Еда</h2>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </li>
+        <li class="article__reason-item">
+          <div class="reason reason--blue">
+            <h2 class="reason__title">Там есть Мост Дьявола</h2>
+            <p class="reason__number">&#8212; №2 &#8212;</p>
+            <p class="reason__tagline">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+        </li>
+        <li class="article__reason-item">
+          <div class="reason">
+            <h2 class="reason__title">Небольшая площадь</h2>
+            <p class="reason__number">&#8212; №3 &#8212;</p>
+            <p class="reason__tagline">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="article__reason-item">
+          <div class="reason">
+            <h2 class="reason__title">Красивая дорога</h2>
+            <p class="reason__number">&#8212; №4 &#8212;</p>
+            <p class="reason__tagline">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        </li>
+        <li class="article__reason-item">
+          <div class="reason">
+            <h2 class="reason__title">Мало туристов</h2>
+            <p class="reason__number">&#8212; №5 &#8212;</p>
+            <p class="reason__tagline">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <section class="hotels">
+      <h2 class="hotels__title title-size">Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам
+        лучшиепредложения гостиниц в Седоне</p>
+      <button class="hotels__button" type="bytton">
+        <span class="visually-hidden">Открыть выбор гостиниц</span>
+        Найти гостиницу
+      </button>
+      <img src="img/map-mobile.png" alt="Карта с выбором гостиниц" width="320" height="350">
+    </section>
+
+  </main>
+
+  <footer class="footer page__footer">
+    <a class="footer__tag-sedona">#visitsedona</a>
+    <ul class="footer__network-list">
+      <li class="footer__network-item">
+        <a class="footer__network-link" href="#">
+          <img src="img/icon-twitter.svg" alt="Наш Twitter">
+        </a>
+      </li>
+      <li class="footer__network-item">
+        <a class="footer__network-link" href="#">
+          <img src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+        </a>
+      </li>
+      <li class="footer__network-item">
+        <a class="footer__network-link" href="#">
+          <img src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__developer">
+      <p class="footer__developer--logo">Разработано</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
