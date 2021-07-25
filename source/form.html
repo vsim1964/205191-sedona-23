@@ -38,100 +38,108 @@
   </header>
 
   <main class="main page__main">
-    <h1 class="visually-hidden">Оставьте свой отзыв</h1>
-
-    <h2 class="title-size">Фото и видео</h2>
+    <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
+    <h2 class="title-size">Оставьте свой отзыв</h2>
     <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
+    <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
 
-    <form class="form person" action="https://echo.htmlacademy.ru" name="person" id="person_id">
-      <fieldset class="form__fieldset" form="person_id">
-        <legend class="form__legend">Представьтесь:</legend>
-        <label class="form__label">Имя*:
-          <input type="text" form="person_id" name="first_name" required placeholder="Петр">
-        </label>
-        <label class="form__label">Фамилия*:
-          <input type="text" form="person_id" name="second_name" required placeholder="Иванов">
-        </label>
-        <label class="form__label">Отчество:
-          <input type="text" form="person_id" name="middle_name" placeholder="Александрович">
-        </label>
-      </fieldset>
-    </form>
+      <section class="person">
+        <h2 class="form__title">Представьтесь:</h2>
+        <div class="person__flex">
+          <label class="person__label" for="first_name">Имя*:</label>
+          <input class="person__input" type="text" form="reviews_id" id="first_name" name="first_name" required
+            placeholder="Петр">
+        </div>
+        <div class="person__flex">
+          <label class="person__label" for="second_name">Фамилия*:</label>
+          <input class="person__input" type="text" form="reviews_id" id="second_name" name="second_name" required
+            placeholder="Иванов">
+        </div>
+        <div class="person__flex">
+          <label class="person__label" for="middle_name">Отчество:</label>
+          <input class="person__input" type="text" form="reviews_id" id="middle_name" name="middle_name"
+            placeholder="Александрович">
+        </div>
+      </section>
 
-    <form class="form contacts" action="https://echo.htmlacademy.ru" name="contacts" id="contacts_id">
-      <fieldset class="form__fieldset" form="contacts_id">
-        <legend class="form__legend">Контактная информация:</legend>
-        <label class="form__label">Контактный телефон*:
-          <input type="tel" form="contacts_id" name="tel" required placeholder="Введите телефон">
-        </label>
-        <label class="form__label">Электронная почта*:
-          <input type="email" form="contacts_id" name="email" required placeholder="Введите e-mail">
-        </label>
-      </fieldset>
-    </form>
+      <section class="contacts">
+        <h2 class="form__title">Контактная информация:</h2>
+        <div class="contacts__grid">
+          <label class="contacts__label" for="tel">Контактный телефон*:</label>
+          <input class="contacts__input" type="tel" form="reviews_id" id="tel" name="tel" required
+            placeholder="Введите телефон">
+          <div class="contacts__img contacts__img--tel"></div>
+        </div>
+        <div class="contacts__grid">
+          <label class="contacts__label" for="email">Электронная почта*:</label>
+          <input class="contacts__input" type="email" form="reviews_id" id="email" name="email" required
+            placeholder="Введите e-mail">
+          <div class="contacts__img contacts__img--mail"></div>
+        </div>
+      </section>
 
-    <form class="form impression" action="https://echo.htmlacademy.ru" name="imression" id="impression_id">
-      <fieldset class="form__fieldset" form="impression_id">
-        <legend class="form__legend">Ваше общее впечатление</legend>
-        <label class="form__label">
-          <input class="form__input--clip" type="radio" form="impression_id" name="impression_radio" checked
-            value="Скорее положительное">
-          <span class="form__radio"></span>
-          Скорее положительное
-        </label>
-        <label>
-          <input class="form__input--clip" type="radio" form="impression_id" name="impression_radio"
-            value="Скорее отрицательное">
-          <span class="form__radio"></span>
-          Скорее отрицательное
-        </label>
-        <label class="form__label">
-          <input class="form__input--clip" type="radio" form="impression_id" name="impression_radio"
-            value="Затрудняюсь ответить">
-          <span class="form__radio"></span>
-          Затрудняюсь ответить
-        </label>
-      </fieldset>
-    </form>
+      <section class="impression">
+        <h2 class="form__title">Ваше общее впечатление</h2>
+        <div class="impression__flex">
+          <label class="impression__label">
+            <input class="impression__input" type="radio" form="reviews_id" checked name="impression_radio"
+              value="Скорее положительное">
+            <div class="impression__radio"></div>
+            Скорее положительное
+          </label>
+          <label class="impression__label">
+            <input class="impression__input" type="radio" form="reviews_id" name="impression_radio"
+              value="Скорее отрицательное">
+            <div class="impression__radio"></div>
+            Скорее отрицательное
+          </label>
+          <label class="impression__label">
+            <input class="impression__input" type="radio" form="reviews_id" name="impression_radio"
+              value="Затрудняюсь ответить">
+            <div class="impression__radio"></div>
+            Затрудняюсь ответить
+          </label>
+        </div>
+      </section>
 
-    <form class="form visit" action="https://echo.htmlacademy.ru" name="visit" id="visit_id">
-      <fieldset class="form__fieldset" form="visit_id">
-        <legend class="form__legend">Посещенные достопримечательности</legend>
-        <label class="form__label">
-          <input class="form__input--clip" type="checkbox" form="visit_id" name="visit_1" checked value="Мост Дьявола">
-          <span class="form__checkbox"></span>
-          Мост Дьявола
-        </label>
-        <label class="form__label">
-          <input class="form__input--clip" type="checkbox" form="visit_id" name="visit_2" checked value="Гора-Колокол">
-          <span class="form__checkbox"></span>
-          Гора-Колокол
-        </label>
-        <label class="form__label">
-          <input class="form__input--clip" type="checkbox" form="visit_id" name="visit_3" checked value="Слайд-парк">
-          <span class="form__checkbox"></span>
-          Слайд-парк
-        </label>
-        <label class="form__label">
-          <input class="form__input--clip" type="checkbox" form="visit_id" name="visit_4" value="Красные скалы">
-          <span class="form__checkbox"></span>
-          Красные скалы
-        </label>
-      </fieldset>
-    </form>
+      <section class="visit">
+        <h2 class="form__title">Посещенные достопримечательности</h2>
+        <div class="visit__flex">
+          <label class="visit__label">
+            <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Мост Дьявола">
+            <div class="visit__checkbox"></div>
+            Мост Дьявола
+          </label>
+          <label class="visit__label">
+            <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Гора-Колокол">
+            <div class="visit__checkbox"></div>
+            Гора-Колокол
+          </label>
+          <label class="visit__label">
+            <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Слайд-парк">
+            <div class="visit__checkbox"></div>
+            Слайд-парк
+          </label>
+          <label class="visit__label">
+            <input class="visit__input" type="checkbox" form="reviews_id" name="visit" value="Красные скалы">
+            <div class="visit__checkbox"></div>
+            Красные скалы
+          </label>
+        </div>
+      </section>
 
-    <form class="form description" action="https://echo.htmlacademy.ru" name="description" id="description_id">
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Опишите свои эмоции:</legend>
-        <label class="form__label">
-          <textarea form="description_id" name="description_text" placeholder="Опишите подробно все свои восторги">
+      <section class="description">
+        <h2 class="form__title">Опишите свои эмоции:</h2>
+        <label class="description__label">
+          <textarea class="description__textarea" form="reviews_id" name="description_text"
+            placeholder="Опишите подробно все свои восторги">
 					</textarea>
         </label>
-      </fieldset>
-    </form>
+      </section>
 
-    <button type="submit">Отправить отзыв</button>
+      <input class="button-form" type="submit" form="reviews_id" value="Отправить отзыв">
+    </form>
 
     <!-- Всплывающие окна -->
 
