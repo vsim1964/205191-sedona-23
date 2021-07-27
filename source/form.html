@@ -23,10 +23,10 @@
         <img class="menu-btn__img" src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
       <ul class="page-header__list">
-        <li class="page-header__item"><a>Главная</a></li>
-        <li class="page-header__item"><a>Фото и видео</a></li>
-        <li class="page-header__item"><a>Форма отзыва</a></li>
-        <li class="page-header__item"><a>HTML Academy</a></li>
+        <li class="page-header__item"><a href="#">Главная</a></li>
+        <li class="page-header__item"><a href="#">Фото и видео</a></li>
+        <li class="page-header__item"><a href="#">Форма отзыва</a></li>
+        <li class="page-header__item"><a href="#">HTML Academy</a></li>
       </ul>
     </nav>
     <div class="page-header__cover">
@@ -44,7 +44,7 @@
 
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
 
-      <section class="person">
+      <fieldset class="person">
         <h2 class="form__title">Представьтесь:</h2>
         <div class="person__flex">
           <label class="person__label" for="first_name">Имя*:</label>
@@ -61,9 +61,9 @@
           <input class="person__input" type="text" form="reviews_id" id="middle_name" name="middle_name"
             placeholder="Александрович">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="contacts">
+      <fieldset class="contacts">
         <h2 class="form__title">Контактная информация:</h2>
         <div class="contacts__grid">
           <label class="contacts__label" for="tel">Контактный телефон*:</label>
@@ -77,9 +77,9 @@
             placeholder="Введите e-mail">
           <div class="contacts__img contacts__img--mail"></div>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="impression">
+      <fieldset class="impression">
         <h2 class="form__title">Ваше общее впечатление</h2>
         <div class="impression__flex">
           <label class="impression__label">
@@ -101,9 +101,9 @@
             Затрудняюсь ответить
           </label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="visit">
+      <fieldset class="visit">
         <h2 class="form__title">Посещенные достопримечательности</h2>
         <div class="visit__flex">
           <label class="visit__label">
@@ -127,16 +127,16 @@
             Красные скалы
           </label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="description">
+      <fieldset class="description">
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <label class="description__label">
           <textarea class="description__textarea" form="reviews_id" name="description_text"
             placeholder="Опишите подробно все свои восторги">
 					</textarea>
         </label>
-      </section>
+      </fieldset>
 
       <input class="button-form" type="submit" form="reviews_id" value="Отправить отзыв">
     </form>
@@ -146,7 +146,7 @@
     <div class="modal-failure">
       <h2>Что-то пошло не так!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button type="submit">OK</button>
+      <button type="submit">Ok</button>
     </div>
 
     <div class="modal-succes">
