@@ -15,25 +15,28 @@
 
 <body class="page">
 
-  <header class="header page__header">
+  <header class="page__header">
     <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav page-header__nav--hidden">
+    <nav class="page-header__nav">
       <button class="page-header__toggle page-header__toggle--active" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img class="menu-btn__img" src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
-      <ul class="page-header__list">
-        <li class="page-header__item"><a href="#">Главная</a></li>
-        <li class="page-header__item"><a href="#">Фото и видео</a></li>
-        <li class="page-header__item"><a href="#">Форма отзыва</a></li>
-        <li class="page-header__item"><a href="#">HTML Academy</a></li>
-      </ul>
+      <div class="switch-off">
+        <ul class="page-header__list">
+          <li class="page-header__item"><a href="#">Главная</a></li>
+          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <a class="icon-cross" href="#"></a>
+      </div>
     </nav>
-    <div class="page-header__cover">
-      <img class="page-header__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
+    <div class="page-header__cover cover">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
         height="214">
-      <img class="page-header__shaving" src="img/left-vector.svg" alt="Белый фон" width="600" height="57">
-      <img class="page-header__shaving" src="img/right-vector.svg" alt="Белый фон" width="600" height="57">
+      <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон">
     </div>
   </header>
 
@@ -157,27 +160,27 @@
 
   </main>
 
-  <footer class="footer page__footer">
-    <a class="footer__tag-sedona">#visitsedona</a>
-    <ul class="footer__network-list">
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-twitter.svg" alt="Наш Twitter">
+  <footer class="page__footer">
+    <a class="page__footer--tag">#visitsedona</a>
+    <ul class="page__footer--list network">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-twitter.svg" alt="Наш Twitter">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
         </a>
       </li>
     </ul>
-    <div class="footer__developer">
-      <p class="footer__developer--logo">Разработано</p>
+    <div class="page__footer--developer">
+      Разработано
     </div>
   </footer>
 

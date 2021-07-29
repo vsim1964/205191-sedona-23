@@ -15,85 +15,86 @@
 
 <body class="page">
 
-  <header class="header page__header">
+  <header class="page__header">
     <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav page-header__nav--hidden">
+    <nav class="page-header__nav">
       <button class="page-header__toggle page-header__toggle--active" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img class="menu-btn__img" src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
-      <ul class="page-header__list">
-        <li class="page-header__item"><a href="#">Главная</a></li>
-        <li class="page-header__item"><a href="#">Фото и видео</a></li>
-        <li class="page-header__item"><a href="#">Форма отзыва</a></li>
-        <li class="page-header__item"><a href="#">HTML Academy</a></li>
-      </ul>
+      <div class="switch-off">
+        <ul class="page-header__list">
+          <li class="page-header__item"><a href="#">Главная</a></li>
+          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <a class="icon-cross" href="#"></a>
+      </div>
     </nav>
-    <div class="page-header__cover">
-      <img class="page-header__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
+    <div class="page-header__cover cover">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
         height="214">
-      <img class="page-header__shaving" src="img/left-vector.svg" alt="Белый фон" width="600" height="57">
-      <img class="page-header__shaving" src="img/right-vector.svg" alt="Белый фон" width="600" height="57">
+      <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон">
     </div>
   </header>
 
   <main class="main page__main">
     <h1 class="visually-hidden">Приезжайте в Седону - настоящий город Запада рядом с Мостом Дьявола</h1>
 
-    <section class="gallery container">
-      <h2 class="gallery__title title-size">Фото и видео</h2>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <ul class="gallery__list">
+    <section class="gallery">
+      <div class="gallery__header">
+        <h2 class="title-size">Фото и видео</h2>
+        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <ul>
         <li class="gallery__item">
-          <img src="img/photo-1-mobile.jpg" alt="Дорога в Седону" width="280" height="280">
+          <img class="gallery__img" src="img/road-desktop.jpg" alt="Дорога в Седону">
           <p class="gallery__caption">Неродные просторы</p>
           <p class="gallery__author">Автор фото: Борис</p>
-          <div class="gallery__like">
-            <p class="gallery__counter">1350</p>
-          </div>
+          <p class="gallery__like">1350</p>
         </li>
         <li class="gallery__item">
-          <img src="img/photo-2-mobile.jpg" alt="Фото растения в районе Седоны" width="280" height="280">
+          <img class="gallery__img" src="img/cactus-2-desktop.jpg" alt="Фото растения в районе Седоны">
           <p class="gallery__caption">Местная растительность</p>
           <p class="gallery__author">Автор фото: Сергей</p>
-          <div class="gallery__like">
-            <p class="gallery__counter">143</p>
-          </div>
+          <p class="gallery__like">143</p>
         </li>
         <li class="gallery__item">
-          <img src="img/photo-3-mobile.jpg" alt="Автодорога в горах на север от Седоны" width="280" height="280">
+          <img class="gallery__img" src="img/mountains-desktop.jpg" alt="Автодорога в горах на север от Седоны">
           <p class="gallery__caption">Дорога на Север</p>
           <p class="gallery__author">Автор фото: Петр</p>
-          <div class="gallery__like">
-            <p class="gallery__counter">96</p>
-          </div>
+          <p class="gallery__like">96</p>
         </li>
         <li class="gallery__item">
-          <img src="img/photo-4-desktop-1.jpg" alt="Изображение Моста Дьявола" width="280" height="280">
+          <img class="gallery__img" src="img/bridge-desktop.jpg" alt="Изображение Моста Дьявола">
           <p class="gallery__caption">Мост Дьявола</p>
           <p class="gallery__author">Автор фото: Антон</p>
-          <div class="gallery__like">
-            <p class="gallery__counter">254</p>
-          </div>
+          <p class="gallery__like">254</p>
         </li>
       </ul>
     </section>
 
-    <section class="video container">
-      <h2 class="video__title title-size">Все еще сомневаетесь?</h2>
+    <section class="video">
+      <h2 class="title-size">Все еще сомневаетесь?</h2>
       <p> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <div class="video-wrapper">
-        <video class="video__film" src="#" width="320" height="201" preload="none" poster="video-mobile.jpg">
+      <div class="video__wrapper">
+        <img class="video__poster" src="img/video-mobile.jpg" alt="">
+        <!-- <video class="video__film" width="320" height="201" preload="none" poster="poster-desktop.jpg" controls="false">
           <source src="#" type="video/webm">
-          <source src="#" type="video/ogv">
-          <source src="#" type="video/mp4">
+          <source src="video/landscape.webm" type="video/ogv">
+          <source src="video/landscape.mp4" type="video/mp4">
           Ваш браузер не поддерживает HTML5 видео
         </video>
-        <div class="video__controls">
+        -->
+        <form class="video__controls--1">
           <label>
             <input class="video__seek-bar" type="range" min="0" max="100" value="0" step="1">
             <span class="visually-hidden">Пропустить кадры</span>
           </label>
+        </form>
+        <form class="video__controls--2">
           <button class="video__reload" type="button">
             <span class="visually-hidden">Включить видео сначала</span>
           </button>
@@ -103,33 +104,33 @@
           <button class="video__full-screen" type="button">
             <span class="visually-hidden">Раскрыть видео на весь экран</span>
           </button>
-        </div>
+        </form>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer page__footer">
-    <a class="footer__tag-sedona">#visitsedona</a>
-    <ul class="footer__network-list">
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-twitter.svg" alt="Наш Twitter">
+  <footer class="page__footer">
+    <a class="page__footer--tag">#visitsedona</a>
+    <ul class="page__footer--list network">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-twitter.svg" alt="Наш Twitter">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+      <li>
+        <a class="network--link" href="#">
+          <img class="network--img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
         </a>
       </li>
     </ul>
-    <div class="footer__developer">
-      <p class="footer__developer--logo">Разработано</p>
+    <div class="page__footer--developer">
+      Разработано
     </div>
   </footer>
 
