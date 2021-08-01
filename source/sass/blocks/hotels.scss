@@ -1,0 +1,15 @@
+.hotels {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.hotels__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 0;
+
+  p {
+    padding: 40px 0;
+  }
+}

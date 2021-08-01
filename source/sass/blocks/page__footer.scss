@@ -1,10 +1,10 @@
-.page__footer {
+.page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 235px;
 
-  &--tag {
+  &__tag {
     padding: 30px 77px 0;
     font-weight: bold;
     font-size: 21px;
@@ -15,11 +15,11 @@
     text-transform: uppercase;
   }
 
-  &--list {
+  &__list {
     margin: 33px 0 45px;
   }
 
-  &--developer {
+  &__developer {
 
     font-weight: normal;
     font-size: 14px;
@@ -39,25 +39,5 @@
       top: 0;
       right: -30px;
     }
-  }
-}
-
-.network {
-  display: flex;
-
-  &--link {
-    width: 46px;
-    height: 48px;
-    background: #81B3D2;
-    margin: 0 6px;
-    display: block;
-    position: relative;
-  }
-
-  &--img {
-    position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 }

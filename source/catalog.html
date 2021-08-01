@@ -45,7 +45,7 @@
 
     <section class="gallery">
       <div class="gallery__header">
-        <h2 class="title-size">Фото и видео</h2>
+        <h2 class="article__title">Фото и видео</h2>
         <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
       <ul>
@@ -77,7 +77,7 @@
     </section>
 
     <section class="video">
-      <h2 class="title-size">Все еще сомневаетесь?</h2>
+      <h2 class="article__title">Все еще сомневаетесь?</h2>
       <p> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__wrapper">
         <img class="video__poster" src="img/video-mobile.jpg" alt="">
@@ -88,13 +88,13 @@
           Ваш браузер не поддерживает HTML5 видео
         </video>
         -->
-        <form class="video__controls--1">
+        <form class="video__controls video__controls--top">
           <label>
             <input class="video__seek-bar" type="range" min="0" max="100" value="0" step="1">
             <span class="visually-hidden">Пропустить кадры</span>
           </label>
         </form>
-        <form class="video__controls--2">
+        <form class="video__controls video__controls--bottom">
           <button class="video__reload" type="button">
             <span class="visually-hidden">Включить видео сначала</span>
           </button>
@@ -110,26 +110,26 @@
 
   </main>
 
-  <footer class="page__footer">
-    <a class="page__footer--tag">#visitsedona</a>
-    <ul class="page__footer--list network">
+  <footer class="page__footer page-footer">
+    <a class="page-footer__tag">#visitsedona</a>
+    <ul class="page-footer__list network">
       <li>
-        <a class="network--link" href="#">
-          <img class="network--img" src="img/icon-twitter.svg" alt="Наш Twitter">
+        <a class="network__link" href="#">
+          <img class="network__img" src="img/icon-twitter.svg" alt="Наш Twitter">
         </a>
       </li>
       <li>
-        <a class="network--link" href="#">
-          <img class="network--img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+        <a class="network__link" href="#">
+          <img class="network__img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
         </a>
       </li>
       <li>
-        <a class="network--link" href="#">
-          <img class="network--img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+        <a class="network network__link" href="#">
+          <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
         </a>
       </li>
     </ul>
-    <div class="page__footer--developer">
+    <div class="page-footer__developer">
       Разработано
     </div>
   </footer>
