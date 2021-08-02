@@ -1,0 +1,13 @@
+.article__header {
+  @include wrap;
+  margin-bottom: 11px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.article__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 28px;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+.page-header {
+  position: relative;
+  height: 56px;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 51px);
+  }
+
+  &__nav {
+    height: 56px;
+  }
+
+  &__toggle {
+    border: 0;
+    background: none;
+    float: right;
+    padding: 17px 20px 17px 0;
+  }
+
+  &__list {
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: #81b3d2;
+  }
+
+  &__link {
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__cover {
+    background-color: #000000;
+    background-image: url(../img/back-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 390px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+    z-index: -1;
+  }
+}
+
+.icon-cross {
+  position: absolute;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icon-cross.svg);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    z-index: 1;
+  }
+}
+
+.switch-off {
+  display: none;
+}

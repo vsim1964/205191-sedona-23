@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+// Global
+
+@import 'global/normalize.scss';
+@import 'global/global.scss';
+@import 'global/variables.scss';
+@import 'global/mixins.scss';
+@import 'global/fonts.scss';
+
+// Blocks
+
+@import 'blocks/page.scss';
+@import 'blocks/page__header.scss';
+@import 'blocks/cover.scss';
+
+@import 'blocks/article.scss';
+@import 'blocks/reason.scss';
+@import 'blocks/hotels.scss';
+@import 'blocks/button.scss';
+@import 'blocks/map.scss';
+@import 'blocks/page__footer.scss';
+@import 'blocks/network.scss';
+@import 'blocks/form.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/video.scss';

@@ -15,36 +15,39 @@
 
 <body class="page">
 
-  <header class="header page__header">
+  <header class="page__header">
     <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav page-header__nav--hidden">
+    <nav class="page-header__nav">
       <button class="page-header__toggle page-header__toggle--active" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img class="menu-btn__img" src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
-      <ul class="page-header__list">
-        <li class="page-header__item"><a>Главная</a></li>
-        <li class="page-header__item"><a>Фото и видео</a></li>
-        <li class="page-header__item"><a>Форма отзыва</a></li>
-        <li class="page-header__item"><a>HTML Academy</a></li>
-      </ul>
+      <div class="switch-off">
+        <ul class="page-header__list">
+          <li class="page-header__item"><a href="#">Главная</a></li>
+          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <a class="icon-cross" href="#"></a>
+      </div>
     </nav>
-    <div class="page-header__cover">
-      <img class="page-header__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
+    <div class="page-header__cover cover">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
         height="214">
-      <img class="page-header__shaving" src="img/left-vector.svg" alt="Белый фон" width="600" height="57">
-      <img class="page-header__shaving" src="img/right-vector.svg" alt="Белый фон" width="600" height="57">
+      <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон">
     </div>
   </header>
 
   <main class="main page__main">
     <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
-    <h2 class="title-size">Оставьте свой отзыв</h2>
+    <h2 class="article__title">Оставьте свой отзыв</h2>
     <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
 
-      <section class="person">
+      <fieldset class="person">
         <h2 class="form__title">Представьтесь:</h2>
         <div class="person__flex">
           <label class="person__label" for="first_name">Имя*:</label>
@@ -61,9 +64,9 @@
           <input class="person__input" type="text" form="reviews_id" id="middle_name" name="middle_name"
             placeholder="Александрович">
         </div>
-      </section>
+      </fieldset>
 
-      <section class="contacts">
+      <fieldset class="contacts">
         <h2 class="form__title">Контактная информация:</h2>
         <div class="contacts__grid">
           <label class="contacts__label" for="tel">Контактный телефон*:</label>
@@ -77,9 +80,9 @@
             placeholder="Введите e-mail">
           <div class="contacts__img contacts__img--mail"></div>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="impression">
+      <fieldset class="impression">
         <h2 class="form__title">Ваше общее впечатление</h2>
         <div class="impression__flex">
           <label class="impression__label">
@@ -101,9 +104,9 @@
             Затрудняюсь ответить
           </label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="visit">
+      <fieldset class="visit">
         <h2 class="form__title">Посещенные достопримечательности</h2>
         <div class="visit__flex">
           <label class="visit__label">
@@ -127,16 +130,16 @@
             Красные скалы
           </label>
         </div>
-      </section>
+      </fieldset>
 
-      <section class="description">
+      <fieldset class="description">
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <label class="description__label">
           <textarea class="description__textarea" form="reviews_id" name="description_text"
             placeholder="Опишите подробно все свои восторги">
 					</textarea>
         </label>
-      </section>
+      </fieldset>
 
       <input class="button-form" type="submit" form="reviews_id" value="Отправить отзыв">
     </form>
@@ -146,7 +149,7 @@
     <div class="modal-failure">
       <h2>Что-то пошло не так!</h2>
       <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button type="submit">OK</button>
+      <button type="submit">Ok</button>
     </div>
 
     <div class="modal-succes">
@@ -157,27 +160,27 @@
 
   </main>
 
-  <footer class="footer page__footer">
-    <a class="footer__tag-sedona">#visitsedona</a>
-    <ul class="footer__network-list">
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-twitter.svg" alt="Наш Twitter">
+  <footer class="page__footer page-footer">
+    <a class="page-footer__tag">#visitsedona</a>
+    <ul class="page-footer__list network">
+      <li>
+        <a class="network__link" href="#">
+          <img class="network__img" src="img/icon-twitter.svg" alt="Наш Twitter">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+      <li>
+        <a class="network__link" href="#">
+          <img class="network__img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
         </a>
       </li>
-      <li class="footer__network-item">
-        <a class="footer__network-link" href="#">
-          <img src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+      <li>
+        <a class="network network__link" href="#">
+          <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
         </a>
       </li>
     </ul>
-    <div class="footer__developer">
-      <p class="footer__developer--logo">Разработано</p>
+    <div class="page-footer__developer">
+      Разработано
     </div>
   </footer>
 
