@@ -26,6 +26,7 @@
         <ul class="page-header__list">
           <li class="page-header__item"><a href="#">Главная</a></li>
           <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"></li>
           <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
           <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
@@ -33,10 +34,10 @@
       </div>
     </nav>
     <div class="page-header__cover cover">
-      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
-        height="214">
-      <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
-      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="280"
+        height="215">
+      <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
     </div>
   </header>
 
@@ -47,7 +48,7 @@
 
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
 
-      <fieldset class="person">
+      <fieldset class="form__fieldset person">
         <h2 class="form__title">Представьтесь:</h2>
         <div class="person__flex">
           <label class="person__label" for="first_name">Имя*:</label>
@@ -66,23 +67,25 @@
         </div>
       </fieldset>
 
-      <fieldset class="contacts">
+      <fieldset class="form__fieldset contacts">
         <h2 class="form__title">Контактная информация:</h2>
-        <div class="contacts__grid">
-          <label class="contacts__label" for="tel">Контактный телефон*:</label>
-          <input class="contacts__input" type="tel" form="reviews_id" id="tel" name="tel" required
-            placeholder="Введите телефон">
-          <div class="contacts__img contacts__img--tel"></div>
-        </div>
-        <div class="contacts__grid">
-          <label class="contacts__label" for="email">Электронная почта*:</label>
-          <input class="contacts__input" type="email" form="reviews_id" id="email" name="email" required
-            placeholder="Введите e-mail">
-          <div class="contacts__img contacts__img--mail"></div>
+        <div class="contacts__flex">
+          <div class="contacts__grid">
+            <label class="contacts__label" for="tel">Контактный телефон*:</label>
+            <input class="contacts__input" type="tel" form="reviews_id" id="tel" name="tel" required
+              placeholder="Введите телефон">
+            <div class="contacts__img contacts__img--tel"></div>
+          </div>
+          <div class="contacts__grid">
+            <label class="contacts__label" for="email">Электронная почта*:</label>
+            <input class="contacts__input" type="email" form="reviews_id" id="email" name="email" required
+              placeholder="Введите e-mail">
+            <div class="contacts__img contacts__img--mail"></div>
+          </div>
         </div>
       </fieldset>
 
-      <fieldset class="impression">
+      <fieldset class="form__fieldset impression">
         <h2 class="form__title">Ваше общее впечатление</h2>
         <div class="impression__flex">
           <label class="impression__label">
@@ -106,7 +109,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="visit">
+      <fieldset class="form__fieldset visit">
         <h2 class="form__title">Посещенные достопримечательности</h2>
         <div class="visit__flex">
           <label class="visit__label">
@@ -132,7 +135,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="description">
+      <fieldset class="form__fieldset description">
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <label class="description__label">
           <textarea class="description__textarea" form="reviews_id" name="description_text"
@@ -141,7 +144,10 @@
         </label>
       </fieldset>
 
-      <input class="button-form" type="submit" form="reviews_id" value="Отправить отзыв">
+      <input class="form__button" type="submit" form="reviews_id" value="Отправить отзыв">
+
+      <div class="form__note">* — обязательные поля</div>
+
     </form>
 
     <!-- Всплывающие окна -->
