@@ -4,6 +4,12 @@
   align-items: center;
   height: 235px;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
   &__tag {
     padding: 30px 77px 0;
     font-weight: bold;
@@ -13,10 +19,19 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__list {
     margin: 33px 0 45px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+
   }
 
   &__developer {

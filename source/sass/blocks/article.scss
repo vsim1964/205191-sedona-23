@@ -1,7 +1,6 @@
 .article__header {
-  @include wrap;
+  padding: 0 10px;
   margin-bottom: 11px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -9,5 +8,5 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 28px;
-  text-align: center;
+  padding-bottom: 20px;
 }

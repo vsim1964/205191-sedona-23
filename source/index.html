@@ -22,6 +22,7 @@
         <ul class="page-header__list">
           <li class="page-header__item"><a href="#">Главная</a></li>
           <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"></li>
           <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
           <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
@@ -29,10 +30,10 @@
       </div>
     </nav>
     <div class="page-header__cover cover">
-      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="282"
-        height="214">
-      <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
-      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="280"
+        height="215">
+      <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
     </div>
   </header>
 
@@ -44,53 +45,73 @@
         <h2 class="article__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </header>
-      <ul>
-        <li>
-          <div class="reason reason--number-1">
-            <h2 class="article__title">Настоящий городок</h2>
-            <p>&#8212; №1 &#8212;</p>
-            <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <ul class="reason__list">
+        <li class="reason__item reason__item--number-1">
+          <div class="reason__grid reason__grid--number-1">
+            <div class="reason reason--number-1">
+              <h2 class="article__title">Настоящий городок</h2>
+              <p>&#8212; №1 &#8212;</p>
+              <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reason__img-box  reason__img-box--city"></div>
+            <!-- <img class="reason__shaving-mobile" src="img/left-white.svg" alt="Белый фон" width="384" height="37">
+            <img class="reason__shaving-mobile" src="img/right-white.svg" alt="Белый фон" width="384" height="37"> -->
+            <div class="reason__detail reason__detail--house">
+              <div class="reason__img">
+                <img src="img/icon-house.svg" alt="">
+              </div>
+              <div class="reason__content">
+                <h2 class="article__title">Жилье</h2>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+              </div>
+            </div>
+            <div class="reason__detail reason__detail--gift">
+              <div class="reason__img">
+                <img src="img/icon-gift.svg" alt="">
+              </div>
+              <div class="reason__content">
+                <h2 class="article__title">Сувениры</h2>
+                <p>Не только китайского, но и местного производства!</p>
+              </div>
+            </div>
+            <div class="reason__detail reason__detail--burger">
+              <div class="reason__img">
+                <img src="img/icon-gift.svg" alt="">
+              </div>
+              <div class="reason__content">
+                <h2 class="article__title">Еда</h2>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </div>
           </div>
-          <div class="reason__img-box  reason__img-box--city"></div>
-          <!-- <img class="reason__shaving-mobile" src="img/left-white.svg" alt="Белый фон" width="384" height="37">
-          <img class="reason__shaving-mobile" src="img/right-white.svg" alt="Белый фон" width="384" height="37"> -->
+        </li>
 
-          <div class="reason__detail">
-            <h2 class="article__title">Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-          </div>
-          <div class="reason__detail">
-            <h2 class="article__title">Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
-          <div class="reason__detail">
-            <h2 class="article__title">Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <li class="reason__item reason__item--number-2">
+          <div class="reason__grid reason__grid--number-2">
+            <div class="reason reason--number-2">
+              <h2 class="article__title">Там есть Мост Дьявола</h2>
+              <p>&#8212; №2 &#8212;</p>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="reason__img-box reason__img-box--bridge"></div>
           </div>
         </li>
-        <li>
-          <div class="reason reason--number-2">
-            <h2 class="article__title">Там есть Мост Дьявола</h2>
-            <p>&#8212; №2 &#8212;</p>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <div class="reason__img-box reason__img-box--bridge"></div>
-        </li>
-        <li>
+
+        <li class="reason__item reason__item--number-3">
           <div class="reason reason--number-3">
             <h2 class="article__title">Небольшая площадь</h2>
             <p>&#8212; №3 &#8212;</p>
             <p>Все интересные места находятся очень близко</p>
           </div>
         </li>
-        <li>
+        <li class="reason__item reason__item--number-4">
           <div class="reason  reason--number-4">
             <h2 class="article__title">Красивая дорога</h2>
             <p>&#8212; №4 &#8212;</p>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
-        <li>
+        <li class="reason__item reason__item--number-5">
           <div class="reason  reason--number-5">
             <h2 class="article__title">Мало туристов</h2>
             <p>&#8212; №5 &#8212;</p>
@@ -138,6 +159,7 @@
       Разработано
     </div>
   </footer>
+
 </body>
 
 </html>

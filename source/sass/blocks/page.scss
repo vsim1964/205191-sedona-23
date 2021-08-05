@@ -1,8 +1,7 @@
 /* PAGE */
 
 .page {
-  min-width: 320px;
-  max-width: 767px;
+  width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
   font-family: 'PT Sans', sans-serif;
@@ -12,10 +11,22 @@
   line-height: 26px;
   color: #000000;
   position: relative;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 
   &__header,
   &__main,
   &__footer {
     position: relative;
   }
+
+
+
 }
