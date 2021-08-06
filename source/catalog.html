@@ -15,7 +15,31 @@
 
 <body class="page">
 
-
+  <header class="page__header">
+    <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+    <nav class="page-header__nav">
+      <button class="page-header__toggle page-header__toggle--active" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
+      </button>
+      <div class="switch-off">
+        <ul class="page-header__list">
+          <li class="page-header__item"><a href="#">Главная</a></li>
+          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="page-header__item"></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+        <a class="icon-cross" href="#"></a>
+      </div>
+    </nav>
+    <div class="page-header__cover cover">
+      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="280"
+        height="215">
+      <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
+      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
+    </div>
+  </header>
 
   <main class="main page__main">
     <h1 class="visually-hidden">Приезжайте в Седону - настоящий город Запада рядом с Мостом Дьявола</h1>
@@ -25,30 +49,54 @@
         <h2 class="article__title">Фото и видео</h2>
         <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
-      <ul>
-        <li class="gallery__item">
-          <img class="gallery__img" src="img/road-desktop.jpg" alt="Дорога в Седону">
-          <p class="gallery__caption">Неродные просторы</p>
-          <p class="gallery__author">Автор фото: Борис</p>
-          <p class="gallery__like">1350</p>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item--number-1">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-1-desktop_1.jpg">
+            <img src="img/photo-1-mobile.jpg" alt="">
+          </picture>
+          <div class="gallery__text">
+            <p class="gallery__caption">Неродные просторы</p>
+            <p class="gallery__author">Автор фото: Борис</p>
+            <p class="gallery__like">1350</p>
+          </div>
         </li>
-        <li class="gallery__item">
-          <img class="gallery__img" src="img/cactus-2-desktop.jpg" alt="Фото растения в районе Седоны">
-          <p class="gallery__caption">Местная растительность</p>
-          <p class="gallery__author">Автор фото: Сергей</p>
-          <p class="gallery__like">143</p>
+        <li class="gallery__item gallery__item--number-2">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-2-desktop_1.jpg">
+            <img src="img/photo-2-mobile.jpg" alt="">
+          </picture>
+          <div class="gallery__text">
+            <p class="gallery__caption">Местная растительность</p>
+            <p class="gallery__author">Автор фото: Сергей</p>
+            <p class="gallery__like">143</p>
+          </div>
         </li>
-        <li class="gallery__item">
-          <img class="gallery__img" src="img/mountains-desktop.jpg" alt="Автодорога в горах на север от Седоны">
-          <p class="gallery__caption">Дорога на Север</p>
-          <p class="gallery__author">Автор фото: Петр</p>
-          <p class="gallery__like">96</p>
+        <li class="gallery__item gallery__item--number-3">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-3-desktop_1.jpg">
+            <img src="img/photo-3-mobile.jpg" alt="">
+          </picture>
+          <div class="gallery__text gallery__text--darcen">
+            <p class="gallery__caption">Дорога на Север</p>
+            <p class="gallery__author">Автор фото: Петр</p>
+            <p class="gallery__like">96</p>
+          </div>
         </li>
-        <li class="gallery__item">
-          <img class="gallery__img" src="img/bridge-desktop.jpg" alt="Изображение Моста Дьявола">
-          <p class="gallery__caption">Мост Дьявола</p>
-          <p class="gallery__author">Автор фото: Антон</p>
-          <p class="gallery__like">254</p>
+        <li class="gallery__item gallery__item--number-4">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/photo-4-desktop_2.jpg">
+            <img src="img/photo-4-desktop_1.jpg" alt="">
+          </picture>
+          <div class="gallery__text">
+            <p class="gallery__caption">Мост Дьявола</p>
+            <p class="gallery__author">Автор фото: Антон</p>
+            <p class="gallery__like">254</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -110,31 +158,7 @@
       Разработано
     </div>
   </footer>
-  <header class="page__header">
-    <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav">
-      <button class="page-header__toggle page-header__toggle--active" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
-      </button>
-      <div class="switch-off">
-        <ul class="page-header__list">
-          <li class="page-header__item"><a href="#">Главная</a></li>
-          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
-          <li class="page-header__item"></li>
-          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-        <a class="icon-cross" href="#"></a>
-      </div>
-    </nav>
-    <div class="page-header__cover cover">
-      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="280"
-        height="215">
-      <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
-      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
-    </div>
-  </header>
+
 
 </body>
 
