@@ -13,6 +13,22 @@
   overflow: hidden;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 a {
   color: #000000;
   text-decoration: none;
@@ -21,22 +37,29 @@ a {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
 
 img {
   display: block;
   width: 100%;
-
+  border-style: none;
 }
+
+
+// Выравнивание
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+// body {
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   display: -webkit-flex;
+//   display: flex;
+//   flex-direction: column;
+// }

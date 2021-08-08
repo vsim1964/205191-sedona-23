@@ -3,7 +3,14 @@
 }
 
 .cover__tagline {
-  padding-top: 90px;
+  position: relative;
+  top: 4em;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 460px;
+  }
 }
 
 .cover__shaving-left {
