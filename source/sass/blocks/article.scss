@@ -14,7 +14,13 @@
   line-height: 28px;
   margin-bottom: 2em;
 
-  @media (min-width: 768px) {
-    font-size: 21px;
+
+  &--big {
+    font-size: 24px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 27px;
+    }
   }
 }
