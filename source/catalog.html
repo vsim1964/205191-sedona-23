@@ -17,25 +17,24 @@
 
   <header class="page__header page-header">
     <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav">
-      <button class="page-header__toggle page-header__toggle--active" type="button">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
-      <div class="switch-off">
-        <ul class="page-header__list">
-          <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
-          <li class="page-header__item"><a class="page-header__link page-header__link--active" href="catalog.html">Фото
-              и видео</a></li>
-          <li class="page-header__item"></li>
-          <li class="page-header__item"><a class="page-header__link" href="form.html">Форма отзыва</a></li>
-          <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-        <a class="icon-cross" href="#"></a>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item"></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+      </ul>
     </nav>
     <div class="page-header__cover cover">
-      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg" width="1200" height="518">
+        <source media="(min-width: 768px)" srcset="img/back-desktop.jpg" width="768" height="518">
+        <img src="img/back-mobile.jpg" alt="" width="320" height="390">
+      </picture>
       <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
       <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
     </div>
@@ -159,7 +158,23 @@
     </div>
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    })
+
+  </script>
 </body>
 
 </html>
