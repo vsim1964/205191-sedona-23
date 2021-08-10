@@ -1,7 +1,33 @@
 .contacts {
   @media (min-width: 768px) {
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/3;
+  }
+
+  & h2 {
+    @media (min-width: 768px) {
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 0;
+        width: 28%;
+        height: 1px;
+        background: #dbdbdb;
+        ;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 28%;
+        height: 1px;
+        background: #dbdbdb;
+      }
+    }
   }
 }
 
@@ -22,7 +48,12 @@
   grid-area: 2/2/3/3;
   position: relative;
 
-  &__img--tel::after {
+  @media (min-width: 1200px) {
+    grid-area: 1/3/2/4;
+  }
+
+
+  &--tel::after {
     content: "";
     display: block;
     width: 58px;
@@ -33,7 +64,7 @@
     background-size: 18px;
   }
 
-  &__img--mail::after {
+  &--mail::after {
     content: "";
     display: block;
     width: 58px;
@@ -58,12 +89,17 @@
 
   @media (min-width: 768px) {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   @media (min-width: 1200px) {
-    width: 50%;
+    grid-template-columns: auto 1fr 58px;
+    grid-template-rows: auto;
+    width: 100%;
+    flex-direction: column;
   }
 }
+
 
 .contacts__label {
   font-family: "PT Sans", sans-serif;
@@ -79,7 +115,14 @@
 
   grid-area: 1/1/2/3;
   align-self: center;
-  justify-self: center;
+  justify-self: left;
+
+  @media (min-width: 1200px) {
+    grid-area: 1/1/2/2;
+    align-self: center;
+    justify-self: left;
+    margin-right: 20px;
+  }
 }
 
 .contacts__input {
@@ -88,4 +131,9 @@
   background: #f2f2f2;
   box-sizing: border-box;
   padding: 18px 0 14px 22px;
+
+  @media (min-width: 1200px) {
+    grid-area: 1/2/2/3;
+  }
+
 }

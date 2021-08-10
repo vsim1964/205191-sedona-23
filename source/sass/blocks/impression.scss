@@ -1,8 +1,13 @@
 .impression {
   @media (min-width: 768px) {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 1/2;
     height: auto;
+    border-right: 1px solid #dbdbdb;
+
+    & h2 {
+      text-align-last: left;
+    }
   }
 }
 
@@ -12,9 +17,12 @@
 }
 
 .impression__label {
-  display: block;
+  display: flex;
   position: relative;
   cursor: pointer;
+  align-items: center;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .impression__input {
@@ -33,6 +41,7 @@
   background: #f2f2f2;
   border: 5px solid #f2f2f2;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 .impression__input:checked+.impression__radio::after {

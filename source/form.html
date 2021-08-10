@@ -41,11 +41,12 @@
   </header>
 
   <main class="main page__main">
-    <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
-    <h2 class="article__title">Оставьте свой отзыв</h2>
-    <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
+      <header class="form__header">
+        <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
+        <h2 class="article__title">Оставьте свой отзыв</h2>
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
 
       <fieldset class="form__fieldset person">
         <h2 class="form__title">Представьтесь:</h2>
@@ -109,7 +110,7 @@
       </fieldset>
 
       <fieldset class="form__fieldset visit">
-        <h2 class="form__title">Посещенные достопримечательности</h2>
+        <h2 class="form__title">Посещенные <br> достопримечательности</h2>
         <div class="visit__flex">
           <label class="visit__label">
             <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Мост Дьявола">

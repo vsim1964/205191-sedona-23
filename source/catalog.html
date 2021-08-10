@@ -104,7 +104,9 @@
       <h2 class="article__title">Все еще сомневаетесь?</h2>
       <p> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__wrapper">
-        <img class="video__poster" src="img/video-mobile.jpg" alt="">
+        <video poster="poster-desktop.jpg" width="100%" controls="false">
+          <source src="video/videomp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        </video>
         <!-- <video class="video__film" width="320" height="201" preload="none" poster="poster-desktop.jpg" controls="false">
           <source src="#" type="video/webm">
           <source src="video/landscape.webm" type="video/ogv">
@@ -113,6 +115,7 @@
         </video>
         -->
         <form class="video__controls video__controls--top">
+
           <label>
             <input class="video__seek-bar" type="range" min="0" max="100" value="0" step="1">
             <span class="visually-hidden">Пропустить кадры</span>
