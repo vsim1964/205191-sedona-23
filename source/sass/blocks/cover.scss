@@ -1,21 +1,45 @@
 .cover {
   position: relative;
+  margin-top: -30px;
 
-  &__tagline {
-    padding-top: 90px;
-  }
-
-  &__shaving-left {
+  &::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 215px;
+    background-image: url(../img/text-index.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 280px 215px;
     position: absolute;
-    bottom: -1px;
-    right: 50%;
-    width: 600px;
-  }
+    top: 90px;
+    margin: 0 auto;
 
-  &__shaving-right {
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    width: 600px;
+    @media (min-width: 768px) {
+      width: 768px;
+      height: 350px;
+      background-size: 460px 350px;
+      top: 80px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+
   }
+}
+
+
+.cover__shaving-left {
+  position: absolute;
+  bottom: -1px;
+  right: 50%;
+  width: 600px;
+}
+
+.cover__shaving-right {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 600px;
 }

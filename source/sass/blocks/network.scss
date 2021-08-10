@@ -1,21 +1,21 @@
 .network {
   display: flex;
+}
 
-  &__link {
-    width: 46px;
-    height: 48px;
-    background: #81B3D2;
-    margin: 0 6px;
-    display: block;
-    position: relative;
-  }
+.network__link {
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  margin: 0 6px;
+  display: block;
+  position: relative;
+}
 
-  &__img {
-    position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 20px;
-    height: 20px;
-  }
+.network__img {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
 }

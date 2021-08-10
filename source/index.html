@@ -11,27 +11,26 @@
 
 <body class="page">
 
-  <header class="page__header">
-    <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="page-header__nav">
-      <button class="page-header__toggle page-header__toggle--active" type="button">
+  <header class="page__header page-header">
+    <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="img/icon-menu.svg" alt="Ссылка на модальное окно с меню" width="23" height="22">
       </button>
-      <div class="switch-off">
-        <ul class="page-header__list">
-          <li class="page-header__item"><a href="#">Главная</a></li>
-          <li class="page-header__item"><a href="catalog.html">Фото и видео</a></li>
-          <li class="page-header__item"></li>
-          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="page-header__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-        <a class="icon-cross" href="#"></a>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item"></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+      </ul>
     </nav>
     <div class="page-header__cover cover">
-      <img class="cover__tagline" src="img/text-index.svg" alt="Слоганы Седоны на английском языке" width="280"
-        height="215">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg" width="1200" height="518">
+        <source media="(min-width: 768px)" srcset="img/back-desktop.jpg" width="768" height="518">
+        <img src="img/back-mobile.jpg" alt="" width="320" height="390">
+      </picture>
       <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
       <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
     </div>
@@ -42,18 +41,24 @@
 
     <article class="article container">
       <header class="article__header">
-        <h2 class="article__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="article__title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </header>
-      <ul class="reason__list">
+      <ul class="article-list reason">
         <li class="reason__item reason__item--number-1">
           <div class="reason__grid reason__grid--number-1">
-            <div class="reason reason--number-1">
+            <div class="reason-text reason-text--number-1">
               <h2 class="article__title">Настоящий городок</h2>
               <p>&#8212; №1 &#8212;</p>
               <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="reason__img-box  reason__img-box--city"></div>
+            <div class="reason__img-box  reason__img-box--city">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city3.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-city2.jpg">
+                <img src="img/photo-city1.jpg" alt="">
+              </picture>
+            </div>
             <!-- <img class="reason__shaving-mobile" src="img/left-white.svg" alt="Белый фон" width="384" height="37">
             <img class="reason__shaving-mobile" src="img/right-white.svg" alt="Белый фон" width="384" height="37"> -->
             <div class="reason__detail reason__detail--house">
@@ -88,31 +93,37 @@
 
         <li class="reason__item reason__item--number-2">
           <div class="reason__grid reason__grid--number-2">
-            <div class="reason reason--number-2">
+            <div class="reason__text reason-text--number-2">
               <h2 class="article__title">Там есть Мост Дьявола</h2>
               <p>&#8212; №2 &#8212;</p>
               <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="reason__img-box reason__img-box--bridge"></div>
+            <div class="reason__img-box reason__img-box--bridge">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge3.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge2.jpg">
+                <img src="img/photo-bridge1.jpg" alt="">
+              </picture>
+            </div>
           </div>
         </li>
 
         <li class="reason__item reason__item--number-3">
-          <div class="reason reason--number-3">
+          <div class="reason-text reason-text--number-3">
             <h2 class="article__title">Небольшая площадь</h2>
             <p>&#8212; №3 &#8212;</p>
             <p>Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="reason__item reason__item--number-4">
-          <div class="reason  reason--number-4">
+          <div class="reason-text  reason-text--number-4">
             <h2 class="article__title">Красивая дорога</h2>
             <p>&#8212; №4 &#8212;</p>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="reason__item reason__item--number-5">
-          <div class="reason  reason--number-5">
+          <div class="reason-text  reason-text--number-5">
             <h2 class="article__title">Мало туристов</h2>
             <p>&#8212; №5 &#8212;</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -123,7 +134,7 @@
 
     <section class="hotels">
       <div class="hotels__flex">
-        <h2 class="article__title">Заинтересовались?</h2>
+        <h2 class="article__title article__title--big">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам
           лучшие предложения гостиниц в Седоне</p>
         <button class="button" type="button">
@@ -131,7 +142,14 @@
           Найти гостиницу
         </button>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+          <img src="img/map-mobile.jpg" alt="">
+        </picture>
+
+      </div>
     </section>
 
   </main>
@@ -150,7 +168,7 @@
         </a>
       </li>
       <li>
-        <a class="network network__link" href="#">
+        <a class="network__link" href="#">
           <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
         </a>
       </li>
@@ -159,6 +177,25 @@
       Разработано
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    })
+
+  </script>
+
 
 </body>
 

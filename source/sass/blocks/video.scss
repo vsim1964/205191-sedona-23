@@ -1,12 +1,12 @@
 .video {
   position: relative;
+}
 
-  &__wrapper {
-    position: relative;
-  }
+.video__wrapper {
+  position: relative;
+}
 
-  &__poster {
-    width: 100%;
-    height: auto;
-  }
+.video__poster {
+  width: 100%;
+  height: auto;
 }

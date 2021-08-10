@@ -1,12 +1,26 @@
+.article {
+  position: relative;
+}
+
 .article__header {
-  padding: 0 10px;
   margin-bottom: 11px;
   text-transform: uppercase;
+  padding: 30px 25px;
 }
 
 .article__title {
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 28px;
-  padding-bottom: 20px;
+  margin-bottom: 2em;
+
+
+  &--big {
+    font-size: 24px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 27px;
+    }
+  }
 }

@@ -7,39 +7,37 @@
     grid-column: 2/3;
     height: auto;
   }
+}
 
-  &__input {
-    height: 58px;
-    border: none;
-    background: #F2F2F2;
-    mix-blend-mode: normal;
-    box-sizing: border-box;
-    flex-grow: 1;
+.person__input {
+  height: 58px;
+  border: none;
+  background: #f2f2f2;
+  mix-blend-mode: normal;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
 
-  }
+.person__input[placeholder] {
+  padding-left: 10px;
+}
 
-  &__input[placeholder] {
-    padding-left: 10px;
-  }
+.person__flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 0;
+}
 
-  &__flex {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 10px 0;
-
-  }
-
-  &__label {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #333333;
-    mix-blend-mode: normal;
-    display: flex;
-    align-items: center;
-  }
+.person__label {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
 }

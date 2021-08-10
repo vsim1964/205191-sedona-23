@@ -1,11 +1,20 @@
 .map {
   position: relative;
-  background-color: #cccccc;
-  background-image: url(../img/map-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 0;
-  height: 350px;
 
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-color: #cccccc;
+    background-image: url(../img/map-marker.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 0;
+    top: 46%;
+    left: 49%;
+    border-radius: 15px;
+  }
 }
