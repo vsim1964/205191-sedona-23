@@ -1,5 +1,6 @@
 .gallery {
   margin: 0 20px 65px 20px;
+  text-transform: uppercase;
 }
 
 .gallery__header {
@@ -9,8 +10,15 @@
 
   @media (min-width: 768px) {
     border-bottom: none;
+
+    &>.article__title {
+      font-size: 30px;
+      margin-bottom: 1em;
+    }
   }
 }
+
+
 
 .gallery__list {
   display: grid;

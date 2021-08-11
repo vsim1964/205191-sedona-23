@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отдых и гостиницы в Седоне (Аризона, США)</title>
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page">
@@ -18,11 +19,14 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--1"><a class="main-nav__link main-nav__link--current"
+            href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
         <li class="main-nav__item"></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+        <li class="main-nav__gradient"></li>
       </ul>
     </nav>
     <div class="page-header__cover cover">
@@ -137,9 +141,9 @@
         <h2 class="article__title article__title--big">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам
           лучшие предложения гостиниц в Седоне</p>
-        <button class="button" type="button">
-          <span class="visually-hidden">Открыть выбор гостиниц</span>
-          Найти гостиницу
+        <button class="button button--mini" type="button">
+          <p class="button__text">Найти гостиницу</p>
+          <span class="visually-hidden">Найти гостиницу</span>
         </button>
       </div>
       <div class="map">
@@ -173,8 +177,9 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__developer">
-      Разработано
+    <div class="page-footer__developer developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/"></a>
     </div>
   </footer>
 
@@ -192,11 +197,9 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
-    })
+    });
 
   </script>
-
-
 </body>
 
 </html>

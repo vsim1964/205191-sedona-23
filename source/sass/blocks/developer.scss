@@ -1,0 +1,33 @@
+.developer {
+  display: flex;
+}
+
+.developer__link {
+  width: 37px;
+  height: 35px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 35px;
+    background-image: url(../img/htmlacademy.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: -30px;
+  }
+
+  &:hover::after {
+    width: 37px;
+    height: 35px;
+    background-image: url(../img/htmlacademy-hover.svg);
+  }
+
+  &:active::after {
+    width: 37px;
+    height: 35px;
+    background-image: url(../img/htmlacademy-active.svg);
+  }
+}

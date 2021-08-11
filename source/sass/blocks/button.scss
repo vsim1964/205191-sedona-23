@@ -1,16 +1,45 @@
 .button {
   background: #81b3d2;
-  width: 280px;
+  width: 100%;
   height: 58px;
   border: none;
-  margin: 0 20px;
+  margin-bottom: 55px;
+  cursor: pointer;
+
+  &--mini {
+    width: 280px;
+    margin: 20px 0 60px;
+  }
+
+  &:hover {
+    background: #669EC0;
+  }
+
+  &:active {
+    background: #5496BD;
+  }
+
+  &:active[value] {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background: #E5E5E5;
+  }
+}
+
+.button__text {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
-  line-height: 58px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 55px;
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 }

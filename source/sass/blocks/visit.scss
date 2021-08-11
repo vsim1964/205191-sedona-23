@@ -11,7 +11,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: 12px;
+        top: 23px;
         right: 0;
         width: 28%;
         height: 1px;
@@ -21,7 +21,7 @@
       &::after {
         content: '';
         position: absolute;
-        top: 12px;
+        top: 23px;
         left: 0;
         width: 28%;
         height: 1px;
@@ -29,7 +29,6 @@
       }
     }
   }
-
 }
 
 .visit__flex {
@@ -50,8 +49,6 @@
   cursor: pointer;
   align-items: center;
   padding-bottom: 10px;
-
-  @media (min-width: 768px) {}
 
   @media (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
@@ -74,6 +71,12 @@
   background: #f2f2f2;
   border: 5px solid #f2f2f2;
   margin-right: 15px;
+
+  &:hover {
+    background: #e5e5e5;
+    border: 5px solid #e5e5e5;
+  }
+
 }
 
 .visit__input:checked+.visit__checkbox::after {

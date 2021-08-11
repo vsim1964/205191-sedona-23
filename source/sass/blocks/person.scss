@@ -25,6 +25,15 @@
   box-sizing: border-box;
   // flex-grow: 1;
   width: 0;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .person__input[placeholder] {

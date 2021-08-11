@@ -6,11 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отзывы о путешествии в Седону (Аризона, США)</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/outline.css">
 </head>
 
 <body class="page">
@@ -22,11 +18,14 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link main-nav__link--current"
+            href="catalog.html">Фото и видео</a></li>
         <li class="main-nav__item"></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+        <li class="main-nav__gradient"></li>
       </ul>
     </nav>
     <div class="page-header__cover cover">
@@ -101,30 +100,24 @@
     </section>
 
     <section class="video">
-      <h2 class="article__title">Все еще сомневаетесь?</h2>
-      <p> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="video__header">
+        <h2 class="article__title  article__title--super">Все еще сомневаетесь?</h2>
+        <p> Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </div>
       <div class="video__wrapper">
-        <video poster="poster-desktop.jpg" width="100%" controls="false">
+        <video poster="img/poster-desktop.jpg" width="100%">
           <source src="video/videomp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-        </video>
-        <!-- <video class="video__film" width="320" height="201" preload="none" poster="poster-desktop.jpg" controls="false">
-          <source src="#" type="video/webm">
-          <source src="video/landscape.webm" type="video/ogv">
-          <source src="video/landscape.mp4" type="video/mp4">
           Ваш браузер не поддерживает HTML5 видео
         </video>
-        -->
-        <form class="video__controls video__controls--top">
-
-          <label>
-            <input class="video__seek-bar" type="range" min="0" max="100" value="0" step="1">
+        <form class="video__controls">
+          <label class="video__seek-bar">
+            <input class="video__input" type="range" min="0" max="100" value="0" step="1">
             <span class="visually-hidden">Пропустить кадры</span>
           </label>
-        </form>
-        <form class="video__controls video__controls--bottom">
           <button class="video__reload" type="button">
             <span class="visually-hidden">Включить видео сначала</span>
           </button>
+          <div class="video__empty"></div>
           <button class="video__subtitles" type="button">
             <span class="visually-hidden">Включить субтитры</span>
           </button>
@@ -156,8 +149,9 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__developer">
-      Разработано
+    <div class="page-footer__developer developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/"></a>
     </div>
   </footer>
 
@@ -175,7 +169,7 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
-    })
+    });
 
   </script>
 </body>

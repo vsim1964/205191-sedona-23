@@ -6,11 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отзывы о путешествии в Седону (Аризона, США)</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/outline.css">
+
 </head>
 
 <body class="page">
@@ -22,11 +19,14 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
         <li class="main-nav__item"></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link main-nav__link--current"
+            href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+        <div class="main-nav__gradient"></div>
       </ul>
     </nav>
     <div class="page-header__cover cover">
@@ -44,7 +44,7 @@
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
       <header class="form__header">
         <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
-        <h2 class="article__title">Оставьте свой отзыв</h2>
+        <h2 class="article__title article__title--super ">Оставьте свой отзыв</h2>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
 
@@ -138,30 +138,40 @@
       <fieldset class="form__fieldset description">
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <label class="description__label">
-          <textarea class="description__textarea" form="reviews_id" name="description_text"
-            placeholder="Опишите подробно все свои восторги">
+          <textarea class="description__textarea" form="reviews_id" name="description_text">Опишите подробно все свои восторги
 					</textarea>
         </label>
       </fieldset>
-
-      <input class="form__button" type="submit" form="reviews_id" value="Отправить отзыв">
-
+      <fieldset class="form__fieldset submit">
+        <!-- <input class="button" type="submit" form="reviews_id" value="Отправить отзыв">
+        <span class="visually-hidden">Отправить отзыв</span> -->
+        <button class="button" type="submit">
+          <p class="button__text">Отправить отзыв</p>
+          <span class="visually-hidden">Отправить отзыв</span>
+        </button>
+      </fieldset>
       <div class="form__note">* — обязательные поля</div>
-
     </form>
 
     <!-- Всплывающие окна -->
 
     <div class="modal-failure">
-      <h2>Что-то пошло не так!</h2>
-      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button type="submit">Ok</button>
+      <h2 class="article__title--big">Что-то пошло <br> не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button" type="button">
+        <p class="button__text">Ok</p>
+        <span class="visually-hidden">Ok</span>
+      </button>
     </div>
 
-    <div class="modal-succes">
-      <h2>Ваш отзыв отправлен!</h2>
-      <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button type="submit">Закрыть окно</button>
+    <div class="modal-success">
+      <h2 class="article__title--big">Ваш отзыв отправлен!</h2>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
+        на сайте.</p>
+      <button class="button" type="button">
+        <p class="button__text">Закрыть окно</p>
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
     </div>
 
   </main>
@@ -185,10 +195,12 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__developer">
-      Разработано
+    <div class="page-footer__developer developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="https://htmlacademy.ru/"></a>
     </div>
   </footer>
+
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
@@ -203,9 +215,10 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
-    })
+    });
 
   </script>
+
 </body>
 
 </html>
