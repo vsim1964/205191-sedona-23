@@ -1,6 +1,6 @@
 .form {
   padding: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
@@ -12,20 +12,30 @@
   }
 
   @media (min-width: 1200px) {
-    padding: 0 160px;
+    padding: 0 119px;
   }
 }
 
 .form__header {
   padding: 0 20px 20px;
-  margin: 0 -20px 20px;
+  margin: 0 -20px 36px;
   border-bottom: 1px solid #e5e5e5;
+
+  p {
+    padding-top: 30px;
+  }
 
   @media (min-width: 768px) {
     display: block;
     grid-row: 1/2;
     grid-column: 1/3;
     border-bottom: none;
+    padding: 0 140px 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 240px 20px;
+
   }
 }
 
@@ -33,14 +43,14 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   mix-blend-mode: normal;
-  margin-bottom: 2em;
+  margin-bottom: 58px;
 }
 
 .form__fieldset {
@@ -51,13 +61,18 @@
   border-bottom: 1px solid #e5e5e5;
   position: relative;
 
+
+
   @media (min-width: 768px) {
     border-bottom: none;
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
   }
+}
 
+.form__fieldset:nth-child(6) {
+  border-bottom: none;
 }
 
 .form__button {
@@ -90,7 +105,7 @@
     display: block;
     grid-row: 6/7;
     grid-column: 2/3;
-    margin: 0 auto;
+    text-align: right;
     line-height: 60px;
   }
 }
@@ -107,3 +122,5 @@ input[placeholder] {
   display: flex;
   align-items: center;
 }
+
+input {}

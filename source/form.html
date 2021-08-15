@@ -12,9 +12,16 @@
 
 <body class="page">
 
-  <header class="page__header page-header">
-    <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+  <header class="page__header page-header page-header--small">
+    <div class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="187" height="97">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="102" height="84">
+        <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+      </picture>
+    </div>
+
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -26,25 +33,21 @@
             href="form.html">Форма отзыва</a></li>
         <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
             Academy</a></li>
-        <div class="main-nav__gradient"></div>
+        <li class="main-nav__gradient"></li>
       </ul>
     </nav>
-    <div class="page-header__cover cover">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg" width="1200" height="518">
-        <source media="(min-width: 768px)" srcset="img/back-desktop.jpg" width="768" height="518">
-        <img src="img/back-mobile.jpg" alt="" width="320" height="390">
-      </picture>
-      <!-- <img class="cover__shaving-left" src="img/left-vector.svg" alt="Белый фон">
-      <img class="cover__shaving-right" src="img/right-vector.svg" alt="Белый фон"> -->
+    <div class="page-header__cover cover cover--small">
+      <div class="cover__poster cover__poster--small"></div>
+
     </div>
   </header>
+
 
   <main class="main page__main">
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
       <header class="form__header">
         <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
-        <h2 class="article__title article__title--super ">Оставьте свой отзыв</h2>
+        <h2 class="article__title article__title--big ">Оставьте свой отзыв</h2>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
 
@@ -71,7 +74,7 @@
         <h2 class="form__title">Контактная информация:</h2>
         <div class="contacts__flex">
           <div class="contacts__grid">
-            <label class="contacts__label" for="tel">Контактный телефон*:</label>
+            <label class="contacts__label" for="tel">Телефон*:</label>
             <input class="contacts__input" type="tel" form="reviews_id" id="tel" name="tel" required
               placeholder="Введите телефон">
             <div class="contacts__img contacts__img--tel"></div>
@@ -177,7 +180,7 @@
   </main>
 
   <footer class="page__footer page-footer">
-    <a class="page-footer__tag">#visitsedona</a>
+    <p class="page-footer__tag">#visitsedona</p>
     <ul class="page-footer__list network">
       <li>
         <a class="network__link" href="#">
