@@ -1,10 +1,10 @@
-.modal-failure {
+.modal__failure {
   display: none;
   text-transform: uppercase;
   position: absolute;
   width: 320px;
   height: 280px;
-  left: 0px;
+  left: 0;
   top: 116px;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   background: #ffffff;
@@ -32,7 +32,7 @@
   }
 }
 
-.modal-success {
+.modal__success {
   display: none;
   text-transform: uppercase;
   position: absolute;
@@ -40,7 +40,7 @@
   height: 323px;
   left: 0px;
   top: 117px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   padding: 40px 40px 0;
 
@@ -50,7 +50,7 @@
     height: 347px;
     left: 64px;
     top: 162px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px 100px 0;
   }
@@ -61,7 +61,7 @@
     height: 347px;
     left: 319px;
     top: 94px;
-    background: #FFFFFF;
+    background: #ffffff;
     mix-blend-mode: normal;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   }

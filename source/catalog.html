@@ -14,23 +14,22 @@
   <header class="page__header page-header page-header--small">
     <div class="page-header__logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="187" height="97">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="102" height="84">
-        <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+        <source media="(min-width: 1200px)" srcset="svg/logotype-desktop.svg" width="187" height="97">
+        <source media="(min-width: 768px)" srcset="svg/logotype-tablet.svg" width="102" height="84">
+        <img class=" page-header__logo" src="svg/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
       </picture>
-
-
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link  main-nav__link--current"
-            href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
         <li class="main-nav__item"></li>
-        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link main-nav__link--current"
+            href="form.html">Форма отзыва</a></li>
         <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
             Academy</a></li>
         <li class="main-nav__gradient"></li>
@@ -118,26 +117,29 @@
           <source media="(min-width: 768px)" srcset="img/poster-tablet.jpg 1x, poster-tablet@2x.jpg 2x">
           <img src="img/poster-mobile.jpg" srcset="img/poster-mobile@2x.jpg 2x" alt="Дорога на Седону">
         </picture>
-        <!-- <video poster="img/poster.jpg" width="100%">
-          <source src="video/videomp4.mp4" type="video/mp4" ; codecs="avc1.42E01E, mp4a.40.2" />
-          Ваш браузер не поддерживает HTML5 видео
-        </video> -->
         <form class="video__controls controls">
           <label class="video__seek-bar">
-            <!-- <input class="video__input" type="range" min="0" max="100" value="0" step="1"> -->
-            <img class="controls__seek-bar" src="img/volume_scale.svg" alt="">
+            <svg class="icon">
+              <use xlink:href="svg/sprite.svg#volume_scale"></use>
+            </svg>
             <span class="visually-hidden">Пропустить кадры</span>
           </label>
           <button class="video__reload" type="button">
-            <img class="controls__replay" src="img/replay.svg" alt="">
+            <svg class="icon">
+              <use xlink:href="svg/sprite.svg#replay"></use>
+            </svg>
             <span class="visually-hidden">Включить видео сначала</span>
           </button>
           <button class="video__subtitles" type="button">
-            <img class="controls__subtitles" src="img/subtitles.svg" alt="">
+            <svg class="icon">
+              <use xlink:href="svg/sprite.svg#subtitles"></use>
+            </svg>
             <span class="visually-hidden">Включить субтитры</span>
           </button>
           <button class="video__full-screen" type="button">
-            <img class="controls__fullscreen" src="img/fullscreen.svg" alt="">
+            <svg class="icon">
+              <use xlink:href="svg/sprite.svg#fullscreen"></use>
+            </svg>
             <span class="visually-hidden">Раскрыть видео на весь экран</span>
           </button>
           <div class="video__empty"></div>
@@ -152,17 +154,23 @@
     <ul class="page-footer__list network">
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-twitter.svg" alt="Наш Twitter">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-twitter"></use>
+          </svg>
         </a>
       </li>
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
       <li>
-        <a class="network network__link" href="#">
-          <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+        <a class="network__link" href="#">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>
