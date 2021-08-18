@@ -179,17 +179,15 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    background-image: url(../svg/like-icon.svg);
+    background-image: url(../svg/like-icon-tablet.svg);
     background-repeat: no-repeat;
     background-position: center center;
     top: 11px;
     left: -35px;
-    fill: #000000;
-    opacity: 0.3;
+
 
     @media (min-width: 1200px) {
-      background-image: url(../svg/like-icon.svg);
-      fill: #ffffff;
+      background-image: url(../svg/like-icon-desktop.svg);
     }
   }
 }

@@ -22,11 +22,10 @@
   }
 
   &:hover::after {
-    fill: #81b3d2;
+    background-image: url(../svg/htmlacademy-hover.svg);
   }
 
   &:active::after {
-    fill: #000000;
-    opacity: 0.3;
+    background-image: url(../svg/htmlacademy-active.svg);
   }
 }
