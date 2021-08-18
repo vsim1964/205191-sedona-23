@@ -39,7 +39,6 @@
 
 .video__poster {
   width: 100%;
-
 }
 
 .video__controls {
@@ -74,7 +73,7 @@
     display: block;
     width: 11px;
     height: 11px;
-    background-image: url(../svg/volume_slider.svg);
+    background-image: url("../svg/volume_slider.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 11px 11px;
@@ -175,7 +174,6 @@
   @media (min-width: 1200px) {
     width: 540px;
   }
-
 }
 
 .video__icon {

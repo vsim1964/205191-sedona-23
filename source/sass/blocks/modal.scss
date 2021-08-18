@@ -6,7 +6,7 @@
   height: 280px;
   left: 0;
   top: 116px;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background: #ffffff;
   padding: 60px 40px 0;
 
@@ -17,7 +17,7 @@
     left: 184px;
     top: 209px;
     background: #ffffff;
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 
   @media (min-width: 1200px) {
@@ -28,7 +28,7 @@
     top: 223px;
     background: #ffffff;
     mix-blend-mode: normal;
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }
 
@@ -38,10 +38,10 @@
   position: absolute;
   width: 320px;
   height: 323px;
-  left: 0px;
+  left: 0;
   top: 117px;
   background: #ffffff;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding: 40px 40px 0;
 
   @media (min-width: 768px) {
@@ -51,7 +51,7 @@
     left: 64px;
     top: 162px;
     background: #ffffff;
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px 100px 0;
   }
 
@@ -63,7 +63,7 @@
     top: 94px;
     background: #ffffff;
     mix-blend-mode: normal;
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }
 

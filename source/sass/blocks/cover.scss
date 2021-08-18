@@ -24,7 +24,7 @@
     display: block;
     width: 322px;
     height: 57px;
-    background-image: url(../svg/intro-triangle.svg);
+    background-image: url("../svg/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
     background-size: 600px 57px;
@@ -51,7 +51,7 @@
     display: block;
     width: 320px;
     height: 390px;
-    background-image: url(../img/back-mobile.jpg);
+    background-image: url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 320px 390px;
@@ -59,19 +59,19 @@
     margin: 0 auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/back-mobile@2x.jpg);
+      background-image: url("../img/back-mobile@2x.jpg");
       background-size: 320px auto;
     }
 
     @media (min-width: 768px) {
       width: 768px;
       height: 518px;
-      background-image: url(../img/back-tablet.jpg);
+      background-image: url("../img/back-tablet.jpg");
       background-position: center center;
       background-size: 768px 518px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/back-tablet@2x.jpg);
+        background-image: url("../img/back-tablet@2x.jpg");
         background-size: 768px auto;
       }
     }
@@ -80,10 +80,10 @@
       width: 1200px;
       background-position: center 100%;
       background-size: 1200px 518px;
-      background-image: url(../img/back-desktop.jpg);
+      background-image: url("../img/back-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/back-desktop@2x.jpg);
+        background-image: url("../img/back-desktop@2x.jpg");
         background-size: 1200px auto;
       }
     }
@@ -94,7 +94,7 @@
     display: block;
     width: 320px;
     height: 180px;
-    background-image: url(../img/back-mobile.jpg);
+    background-image: url("../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center 100%;
     background-size: 320px 390px;
@@ -102,19 +102,19 @@
     margin: 0 auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/back-mobile@2x.jpg);
+      background-image: url("../img/back-mobile@2x.jpg");
       background-size: 320px auto;
     }
 
     @media (min-width: 768px) {
       width: 768px;
       height: 305px;
-      background-image: url(../img/back-tablet.jpg);
+      background-image: url("../img/back-tablet.jpg");
       background-position: center 100%;
       background-size: 768px 518px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/back-tablet@2x.jpg);
+        background-image: url("../img/back-tablet@2x.jpg");
         background-size: 768px autp;
       }
     }
@@ -123,10 +123,10 @@
       width: 1200px;
       background-position: center 100%;
       background-size: 1200px 518px;
-      background-image: url(../img/back-desktop.jpg);
+      background-image: url("../img/back-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/back-desktop@2x.jpg);
+        background-image: url("../img/back-desktop@2x.jpg");
         background-size: 1200px auto;
       }
     }
@@ -137,7 +137,7 @@
     display: block;
     width: 320px;
     height: 320px;
-    background-image: url(../svg/text-index.svg);
+    background-image: url("../svg/text-index.svg");
     background-repeat: no-repeat;
     background-position: 50% 78px;
     background-size: 282px 214px;
@@ -148,8 +148,7 @@
       width: 768px;
       height: 518px;
       background-size: 460px 350px;
-      background-image: url(../svg/text-index.svg);
-
+      background-image: url("../svg/text-index.svg");
     }
 
     @media (min-width: 1200px) {
@@ -162,7 +161,7 @@
     display: block;
     width: 320px;
     height: 320px;
-    background-image: url(../svg/text-sedona.svg);
+    background-image: url("../svg/text-sedona.svg");
     background-repeat: no-repeat;
     background-position: 50% 78px;
     background-size: 230px 40px;
@@ -173,7 +172,7 @@
       width: 768px;
       height: 518px;
       background-size: 460px 80px;
-      background-image: url(../svg/text-sedona.svg);
+      background-image: url("../svg/text-sedona.svg");
       background-position: 50% 103px;
     }
 
