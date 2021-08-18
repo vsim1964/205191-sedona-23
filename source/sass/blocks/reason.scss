@@ -17,13 +17,33 @@
     background: #81b3d2;
     padding: 55px 12px 40px;
     color: #ffffff;
+    position: relative;
 
     @media (min-width: 768px) {
       grid-row: 1/1;
       grid-column: 1/2;
-      padding: 40px 30px 10px;
+      padding: 48px 65px 10px;
+      ;
     }
   }
+
+  &::before {
+
+    @media (max-width: 767px) {
+      content: "";
+      display: block;
+      width: 320px;
+      height: 37px;
+      background-image: url(../img/white_copy.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 320px 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
 
   &--number-2 {
     background: #81b3d2;
@@ -46,7 +66,14 @@
   &--number-4 {
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
+
+    @media (min-width: 768px) {
+      border: none;
+    }
+
   }
+
+
 }
 
 .reason__item {
@@ -70,7 +97,7 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 1/2;
-      padding: 0 40px 0;
+      padding: 0 40px 17px;
     }
   }
 
@@ -96,7 +123,7 @@
 }
 
 .reason__detail {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   text-transform: uppercase;
   position: relative;
   text-align: left;
@@ -105,7 +132,8 @@
 
   @media (min-width: 768px) {
     flex-direction: column;
-    padding: 60px 30px 60px 30px;
+    padding: 38px 30px 45px 29px;
+    ;
     text-align: center;
   }
 }
@@ -128,6 +156,11 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+}
+
+
+.reason-content {
+  padding: 28px 27px 0px;
 }
 
 .reason__img {

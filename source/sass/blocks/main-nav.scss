@@ -6,7 +6,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .main-nav__toggle {
@@ -76,7 +76,7 @@
     align-items: center;
     margin: 0 auto;
     height: 55px;
-    padding: 0 35px;
+
   }
 }
 
@@ -89,7 +89,7 @@
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    flex-basis: 15%;
+    flex-basis: 20%;
   }
 
   @media (max-width: 767px) {
