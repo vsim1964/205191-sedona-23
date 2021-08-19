@@ -15,10 +15,11 @@
   <header class="page__header page-header page-header--small">
     <div class="page-header__logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="187" height="97">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="102" height="84">
-        <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+        <source media="(min-width: 1200px)" srcset="svg/logotype-desktop.svg" width="187" height="97">
+        <source media="(min-width: 768px)" srcset="svg/logotype-tablet.svg" width="102" height="84">
+        <img class=" page-header__logo" src="svg/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
       </picture>
+
     </div>
 
     <nav class="main-nav main-nav--closed">
@@ -158,7 +159,7 @@
 
     <!-- Всплывающие окна -->
 
-    <div class="modal-failure">
+    <div class="modal modal__failure">
       <h2 class="article__title--big">Что-то пошло <br> не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button" type="button">
@@ -167,11 +168,11 @@
       </button>
     </div>
 
-    <div class="modal-success">
+    <div class="modal modal__success">
       <h2 class="article__title--big">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
         на сайте.</p>
-      <button class="button" type="button">
+      <button class="button button--form" type="button">
         <p class="button__text">Закрыть окно</p>
         <span class="visually-hidden">Закрыть окно</span>
       </button>
@@ -184,17 +185,23 @@
     <ul class="page-footer__list network">
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-twitter.svg" alt="Наш Twitter">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-twitter"></use>
+          </svg>
         </a>
       </li>
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
       <li>
-        <a class="network network__link" href="#">
-          <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+        <a class="network__link" href="#">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>

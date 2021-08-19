@@ -1,0 +1,57 @@
+.person {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: auto;
+    margin-left: 60px;
+
+    h2 {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 80px;
+  }
+}
+
+.person__input {
+  height: 58px;
+  border: none;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  width: 0;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+}
+
+.person__input[placeholder] {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.person__flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 0 10px 0;
+  padding-bottom: 17px;
+}
+
+.person__label {
+  font-size: 14px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #333333;
+  padding-right: 15px;
+}
