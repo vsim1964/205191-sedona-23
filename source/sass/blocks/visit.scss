@@ -1,16 +1,14 @@
 .visit {
-
   @media (min-width: 768px) {
     grid-row: 4/5;
     grid-column: 1/3;
-    margin-bottom: 53px
+    margin-bottom: 53px;
   }
 
-  & h2 {
+  h2 {
     @media (min-width: 768px) {
-
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 23px;
         right: 0;
@@ -20,7 +18,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 23px;
         left: 0;
@@ -35,7 +33,6 @@
 .visit__flex {
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -57,7 +54,6 @@
   @media (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
   }
-
 
   @media (min-width: 1200px) {
     flex-basis: 19%;
@@ -85,7 +81,6 @@
     background: #e5e5e5;
     border: 5px solid #e5e5e5;
   }
-
 }
 
 .visit__input:checked+.visit__checkbox::after {
@@ -93,8 +88,8 @@
   display: block;
   position: absolute;
   top: 12px;
-  left: 12px;
-  background-image: url(../img/tick.svg);
+  left: 8px;
+  background-image: url("../svg/tick.svg");
   width: 23px;
   height: 16px;
   background-repeat: no-repeat;

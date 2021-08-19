@@ -11,24 +11,27 @@
   position: relative;
 
   &:hover {
-    background: #669EC0;
+    background: #669ec0;
   }
 
   &:active {
-    background: #5496BD;
+    background: #5496bd;
   }
 
   &:active .network__img {
     opacity: 0.3;
   }
-
 }
 
-.network__img {
+.network__icon {
   position: relative;
   top: 25%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, 0);
   width: 20px;
   height: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

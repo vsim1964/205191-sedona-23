@@ -1,11 +1,15 @@
 .button {
   background: #81b3d2;
-  width: 100%;
+  width: 460px;
   height: 58px;
   border: none;
   margin-bottom: 55px;
   cursor: pointer;
   line-height: 0;
+
+  &--form {
+    width: 100%;
+  }
 
   @media (max-width: 768px) {
     width: 280px;
@@ -13,11 +17,11 @@
   }
 
   &:hover {
-    background: #669EC0;
+    background: #669ec0;
   }
 
   &:active {
-    background: #5496BD;
+    background: #669ec0;
   }
 
   &:active[value] {
@@ -26,7 +30,7 @@
   }
 
   &:disabled {
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 }
 

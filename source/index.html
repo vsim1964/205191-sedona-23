@@ -16,11 +16,10 @@
   <header class="page__header page-header page-header--big">
     <div class="page-header__logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="187" height="97">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="102" height="84">
-        <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+        <source media="(min-width: 1200px)" srcset="svg/logotype-desktop.svg" width="187" height="97">
+        <source media="(min-width: 768px)" srcset="svg/logotype-tablet.svg" width="102" height="84">
+        <img class="page-header__logo" src="svg/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
       </picture>
-
 
     </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -54,13 +53,18 @@
       <ul class="article-list reason">
         <li class="reason__item reason__item--number-1">
           <div class="reason__grid reason__grid--number-1">
-            <div class="reason-text reason-text--number-1">
+            <div class="reason__text reason__text--number-1">
               <h2 class="article__title">Настоящий <br> городок</h2>
               <p class="article__number">&#8212; №1 &#8212;</p>
               <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason__img-box  reason__img-box--city">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/webp/city-desktop.webp 1x, img/webp/city-descktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/city-tablet.webp 1x, img/webp/city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/city-mobile.webp 1x, img/webp/city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
                 <img src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x" alt="Улица Седоны" width="320"
@@ -69,7 +73,9 @@
             </div>
             <div class="reason__detail reason__detail--house">
               <div class="reason__img">
-                <img src="img/icon-house.svg" alt="">
+                <svg class="reason__icon">
+                  <use xlink:href="svg/sprite.svg#icon-house"></use>
+                </svg>
               </div>
               <div class="reason__content">
                 <h2 class="article__title">Жилье</h2>
@@ -78,7 +84,9 @@
             </div>
             <div class="reason__detail reason__detail--burger">
               <div class="reason__img">
-                <img src="img/icon-burger.svg" alt="">
+                <svg class="reason__icon">
+                  <use xlink:href="svg/sprite.svg#icon-burger"></use>
+                </svg>
               </div>
               <div class="reason__content">
                 <h2 class="article__title">Еда</h2>
@@ -87,7 +95,9 @@
             </div>
             <div class="reason__detail reason__detail--gift">
               <div class="reason__img">
-                <img src="img/icon-gift.svg" alt="">
+                <svg class="reason__icon">
+                  <use xlink:href="svg/sprite.svg#icon-gift"></use>
+                </svg>
               </div>
               <div class="reason__content">
                 <h2 class="article__title">Сувениры</h2>
@@ -99,13 +109,18 @@
 
         <li class="reason__item reason__item--number-2">
           <div class="reason__grid reason__grid--number-2">
-            <div class="reason__text reason-text--number-2">
+            <div class="reason__text reason__text--number-2">
               <h2 class="article__title">Там есть Мост Дьявола</h2>
               <p>&#8212; №2 &#8212;</p>
               <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reason__img-box reason__img-box--bridge">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/webp/bridge-desktop.webp 1x, img/webp/bridge-descktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/webp/bridge-tablet.webp 1x, img/webp/bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/bridge-mobile.webp 1x, img/webp/bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
                 <img src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола" width="320"
@@ -116,21 +131,21 @@
         </li>
 
         <li class="reason__item reason__item--number-3">
-          <div class="reason-text reason-text--number-3">
+          <div class="reason__text reason__text--number-3">
             <h2 class="article__title">Небольшая <br> площадь</h2>
             <p>&#8212; №3 &#8212;</p>
             <p>Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="reason__item reason__item--number-4">
-          <div class="reason-text  reason-text--number-4">
+          <div class="reason__text  reason__text--number-4">
             <h2 class="article__title">Красивая <br> дорога</h2>
             <p>&#8212; №4 &#8212;</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="reason__item reason__item--number-5">
-          <div class="reason-text  reason-text--number-5">
+          <div class="reason__text  reason__text--number-5">
             <h2 class="article__title">Мало <br> туристов</h2>
             <p>&#8212; №5 &#8212;</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -151,6 +166,12 @@
       </div>
       <div class="map">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/webp/map-desktop.webp 1x, img/webp/map-descktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/webp/map-tablet.webp 1x, img/webp/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/map-mobile.webp 1x, img/webp/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
           <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Карта окрестностей Седоны" width="320"
@@ -166,17 +187,23 @@
     <ul class="page-footer__list network">
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-twitter.svg" alt="Наш Twitter">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-twitter"></use>
+          </svg>
         </a>
       </li>
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-facebook.svg" alt="Наша страница в Facebook">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
       <li>
         <a class="network__link" href="#">
-          <img class="network__img" src="img/icon-youtube.svg" alt="Наш канал в You-Tube">
+          <svg class="network__icon">
+            <use xlink:href="svg/sprite.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>

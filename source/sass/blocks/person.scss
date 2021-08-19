@@ -8,8 +8,8 @@
     height: auto;
     margin-left: 60px;
 
-    & h2 {
-      text-align-last: left;
+    h2 {
+      text-align: left;
     }
   }
 
@@ -23,7 +23,6 @@
   border: none;
   background: #f2f2f2;
   box-sizing: border-box;
-  // flex-grow: 1;
   width: 0;
 
   &:hover {
