@@ -2,19 +2,23 @@
   position: relative;
 
   &--big {
-    margin-bottom: 400px;
+    margin-bottom: 393px;
 
     @media (min-width: 768px) {
-      margin-bottom: 550px;
+      margin-bottom: 530px;
     }
   }
 
   &--small {
-    margin-bottom: 200px;
+    margin-bottom: 161px;
 
     @media (min-width: 768px) {
-      margin-bottom: 350px;
+      margin-bottom: 320px;
     }
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 360px;
   }
 }
 

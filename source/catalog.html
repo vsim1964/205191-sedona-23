@@ -48,13 +48,15 @@
     <section class="gallery">
       <div class="gallery__header">
         <h2 class="article__title">Фото и видео</h2>
-        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="gallery__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+        <div class="gallery__divider"></div>
       </div>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--number-1">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/webp/road-desktop.webp 1x, img/webp/road-descktop@2x.webp 2x">
+              srcset="img/webp/road-desktop.webp 1x, img/webp/road-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/webp/road-tablet.webp 1x, img/webp/road-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/webp/road-mobile.webp 1x, img/webp/road-mobile@2x.webp 2x">
@@ -63,16 +65,17 @@
             <img src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Седону">
           </picture>
           <div class="gallery__background"></div>
-          <div class="gallery__text">
+          <div class="gallery__text gallery__text--top">
             <p class="gallery__caption">Неродные просторы</p>
             <p class="gallery__author">Автор фото: Борис</p>
-            <p class="gallery__like">1350</p>
+            <p class="gallery__like gallery__like--top ">1350</p>
           </div>
+          <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-2">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/webp/cactus-desktop.webp 1x, img/webp/cactus-descktop@2x.webp 2x">
+              srcset="img/webp/cactus-desktop.webp 1x, img/webp/cactus-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/webp/cactus-tablet.webp 1x, img/webp/cactus-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/webp/cactus-mobile.webp 1x, img/webp/cactus-mobile@2x.webp 2x">
@@ -80,17 +83,18 @@
             <source media="(min-width: 768px)" srcset="img/cactus-tablet.jpg 1x, img/cactus-tablet@2x.jpg 2x">
             <img src="img/cactus-mobile.jpg" srcset="img/cactus-mobile@2x.jpg 2x" alt="Дорога на Седону">
           </picture>
-          <div class="gallery__background"></div>
-          <div class="gallery__text">
+          <div class="gallery__background gallery__background--bottom"></div>
+          <div class="gallery__text gallery__text--bottom">
             <p class="gallery__caption">Местная растительность</p>
             <p class="gallery__author">Автор фото: Сергей</p>
             <p class="gallery__like">143</p>
           </div>
+          <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-3">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/webp/road2-desktop.webp 1x, img/webp/road2-descktop@2x.webp 2x">
+              srcset="img/webp/road2-desktop.webp 1x, img/webp/road2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/webp/road2-tablet.webp 1x, img/webp/road2-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/webp/road2-mobile.webp 1x, img/webp/road2-mobile@2x.webp 2x">
@@ -98,17 +102,18 @@
             <source media="(min-width: 768px)" srcset="img/road2-tablet.jpg 1x, img/road2-tablet@2x.jpg 2x">
             <img src="img/road2-mobile.jpg" srcset="img/road2-mobile@2x.jpg 2x" alt="Дорога на Седону">
           </picture>
-          <div class="gallery__background"></div>
-          <div class="gallery__text gallery__text--darcen">
+          <div class="gallery__background gallery__background--bottom"></div>
+          <div class="gallery__text gallery__text--bottom gallery__text--darcen">
             <p class="gallery__caption">Дорога на Север</p>
             <p class="gallery__author">Автор фото: Петр</p>
             <p class="gallery__like">96</p>
           </div>
+          <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-4">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/webp/bridge2-desktop.webp 1x, img/webp/bridge2-descktop@2x.webp 2x">
+              srcset="img/webp/bridge2-desktop.webp 1x, img/webp/bridge2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/webp/bridge2-tablet.webp 1x, img/webp/bridge2-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/webp/bridge2-mobile.webp 1x, img/webp/bridge2-mobile@2x.webp 2x">
@@ -116,12 +121,13 @@
             <source media="(min-width: 768px)" srcset="img/bridge2-tablet.jpg 1x, img/bridge2-tablet@2x.jpg 2x">
             <img src="img/bridge2-mobile.jpg" srcset="img/bridge2-mobile@2x.jpg 2x" alt="Дорога на Седону">
           </picture>
-          <div class="gallery__background"></div>
-          <div class="gallery__text">
+          <div class="gallery__background gallery__background--bottom"></div>
+          <div class="gallery__text  gallery__text--bottom">
             <p class="gallery__caption">Мост Дьявола</p>
             <p class="gallery__author">Автор фото: Антон</p>
             <p class="gallery__like">254</p>
           </div>
+          <div class="gallery__divider"></div>
         </li>
       </ul>
     </section>
@@ -134,11 +140,10 @@
       <div class="video__wrapper">
         <picture>
           <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/webp/poster-desktop.webp 1x, img/webp/poster-descktop@2x.webp 2x">
+            srcset="img/webp/poster-desktop.webp 1x, img/webp/poster-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/webp/poster-tablet.webp 1x, img/webp/poster-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/webp/poster-mobile.webp 1x, img/webp/poster-mobile@2x.webp 2x">
-
           <source media="(min-width: 1200px)" srcset="img/poster-desktop.jpg 1x, img/poster-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/poster-tablet.jpg 1x, img/poster-tablet@2x.jpg 2x">
           <img src="img/poster-mobile.jpg" srcset="img/poster-mobile@2x.jpg 2x" alt="Дорога на Седону">

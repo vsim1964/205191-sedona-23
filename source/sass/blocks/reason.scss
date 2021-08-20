@@ -9,17 +9,26 @@
   }
 }
 
+.reason__content {
+  padding-right: 25px;
+
+  @media (min-width: 768px) {
+    padding-right: 25px;
+    padding-left: 18px;
+  }
+}
+
 .reason__text {
   &--number-1 {
     background: #81b3d2;
-    padding: 55px 12px 40px;
+    padding: 72px 20px 32px;
     color: #ffffff;
     position: relative;
 
     @media (min-width: 768px) {
       grid-row: 1/1;
       grid-column: 1/2;
-      padding: 20px 65px 27px;
+      padding: 36px 33px 22px;
     }
 
     &::before {
@@ -41,7 +50,7 @@
 
   &--number-2 {
     background: #81b3d2;
-    padding: 40px 15px 35px;
+    padding: 40px 15px 23px;
     color: #ffffff;
 
     @media (min-width: 768px) {
@@ -53,7 +62,7 @@
   &--number-3,
   &--number-4,
   &--number-5 {
-    padding: 40px 15px 35px;
+    padding: 24px 23px 14px;
     color: #000000;
   }
 
@@ -88,8 +97,13 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 1/2;
-      padding: 0 40px 17px;
+      padding: 13px 20px 8px;
     }
+
+    @media (min-width: 1200px) {
+      height: 250px;
+    }
+
   }
 
   &--number-4 {
@@ -98,7 +112,7 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 2/3;
-      padding: 0 40px 0;
+      padding: 13px 20px 8px;
     }
   }
 
@@ -108,13 +122,13 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 3/4;
-      padding: 0 40px 0;
+      padding: 13px 20px 8px;
     }
   }
 }
 
 .reason__detail {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   position: relative;
   text-align: left;
@@ -123,11 +137,36 @@
 
   @media (min-width: 768px) {
     flex-direction: column;
-    padding: 38px 30px 45px 29px;
+    padding: 17px 20px 15px 27px;
     text-align: center;
     justify-content: flex-start;
   }
+
+  @media (min-width: 1200px) {
+    padding: 26px 21px 15px 27px;
+    margin-bottom: 62px;
+  }
+
+  &--house {
+    @media (min-width: 768px) {
+      grid-area: 2/1/3/2;
+    }
+  }
+
+  &--gift {
+    @media (min-width: 768px) {
+      grid-area: 2/3/3/4;
+    }
+  }
+
+  &--burger {
+    @media (min-width: 768px) {
+      grid-area: 2/2/3/3;
+    }
+  }
 }
+
+
 
 .reason__grid {
   @media (min-width: 768px) {
@@ -154,10 +193,13 @@
 }
 
 .reason__img {
-  padding-right: 10px;
+  padding-right: 8px;
+  margin-top: -67px;
+  margin-left: 20px;
 
   @media (min-width: 768px) {
     margin: 0 auto;
+    margin-bottom: -17px;
   }
 }
 
@@ -169,7 +211,7 @@
   position: relative;
 
   &--city {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 
     @media (max-width: 767px) {
       height: 260px;
