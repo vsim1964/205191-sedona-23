@@ -251,7 +251,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    background-image: url("../svg/like-icon-tablet.svg");
+    background-image: url("../img/like-icon-tablet.svg");
     background-repeat: no-repeat;
     background-position: center center;
     top: 6px;
@@ -262,7 +262,7 @@
     }
 
     @media (min-width: 1200px) {
-      background-image: url("../svg/like-icon-desktop.svg");
+      background-image: url("../img/like-icon-desktop.svg");
     }
   }
 }
@@ -289,10 +289,6 @@
     opacity: 0.3;
     height: 80px;
     color: #ffffff;
-  }
-
-  &--bottom {
-    @media (min-width: 1200px) {}
   }
 
   &--darcen {
