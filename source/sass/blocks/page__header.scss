@@ -14,19 +14,23 @@
   }
 
   &--small {
-    margin-bottom: 161px;
+    margin-bottom: 164px;
 
     @media (min-width: 768px) {
       margin-bottom: 320px;
     }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 372px;
+    }
   }
 
-  @media (min-width: 1200px) {
-    margin-bottom: 360px;
-  }
-}
+  .page-header__logo {
+    position: relative;
+    z-index: 1000;
 
-.page-header__logo {
-  position: relative;
-  z-index: 1000;
+    img {
+      width: 100%;
+    }
+  }
 }

@@ -1,11 +1,21 @@
 .button {
   background: #81b3d2;
-  width: 460px;
+  width: 280px;
   height: 58px;
   border: none;
-  margin-bottom: 12px;
   cursor: pointer;
   line-height: 0;
+  // margin: 0 -20px 12px;
+
+  @media (min-width: 768px) {
+    width: 324px;
+    margin: 0 0 12px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 480px;
+    margin: 0 0 12px;
+  }
 
   &--form {
     width: 100%;
@@ -59,5 +69,7 @@ p.button__text {
 }
 
 .article__title--search {
-  margin-bottom: 8px;
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+  }
 }
