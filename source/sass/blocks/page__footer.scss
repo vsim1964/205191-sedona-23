@@ -7,12 +7,12 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
-    height: 120px;
+    height: 128px;
   }
 }
 
 .page-footer__tag {
-  padding: 30px 77px 0;
+  padding: 15px 77px 0;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -27,7 +27,7 @@
 }
 
 .page-footer__list {
-  margin: 33px 0 45px;
+  margin: 32px 0 40px;
 
   @media (min-width: 768px) {
     margin: 0;

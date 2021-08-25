@@ -8,7 +8,7 @@
     height: 27px;
     position: absolute;
     background-color: #cccccc;
-    background-image: url("../svg/map-marker.svg");
+    background-image: url("../img/map-marker.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16,5 +16,9 @@
     top: 46%;
     left: 49%;
     border-radius: 15px;
+  }
+
+  img {
+    width: 100%;
   }
 }
