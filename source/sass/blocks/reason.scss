@@ -27,15 +27,14 @@
 .reason__text {
   &--number-1 {
     background: #81b3d2;
-    padding: 0 40px 22px;
-    ;
+    padding: 71px 40px 30px;
     color: #ffffff;
     position: relative;
 
     @media (min-width: 768px) {
       grid-row: 1/1;
       grid-column: 1/2;
-      padding: 47px 68px 22px;
+      padding: 47px 40px 22px;
     }
 
     &::before {
@@ -63,14 +62,14 @@
     @media (min-width: 768px) {
       grid-row: 1/2;
       grid-column: 3/4;
-      padding: 0 40px 23px;
+      padding: 46px 29px 0;
     }
   }
 
   &--number-3,
   &--number-4,
   &--number-5 {
-    padding: 24px 23px 14px;
+    padding: 27px 35px 14px;
     color: #000000;
   }
 
@@ -105,7 +104,7 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 1/2;
-      padding: 13px 0px;
+      padding: 13px 0;
     }
 
     @media (min-width: 1200px) {
@@ -221,14 +220,13 @@
 }
 
 .reason__img-box {
-  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
 
   &--city {
-    margin-bottom: 37px;
+    margin-bottom: 41px;
 
     @media (max-width: 767px) {
       height: 260px;
