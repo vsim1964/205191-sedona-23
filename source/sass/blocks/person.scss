@@ -1,6 +1,7 @@
 .person {
   display: flex;
   flex-direction: column;
+  margin: 0 0 23px;
 
   @media (min-width: 768px) {
     grid-row: 2/3;
@@ -10,6 +11,10 @@
 
     h2 {
       text-align: left;
+
+      @media (min-width: 768px) {
+        margin-bottom: 56px;
+      }
     }
   }
 
@@ -44,8 +49,13 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 0 0 10px 0;
-  padding-bottom: 17px;
+  // padding: 0 0 10px 0;
+  padding-bottom: 19px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 17px;
+  }
+
 }
 
 .person__label {
@@ -53,5 +63,5 @@
   line-height: 60px;
   text-transform: uppercase;
   color: #333333;
-  padding-right: 15px;
+  padding-right: 17px;
 }

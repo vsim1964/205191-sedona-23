@@ -1,12 +1,13 @@
 /* FONTS */
 /* pt-sans-regular - latin_cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot');
   /* IE9 Compat Modes */
-  src: local(''),
+  src: local("PT Sans"),
     url('../fonts/pt-sans-v12-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */
     url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'),
@@ -21,12 +22,13 @@
 
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../fonts/pt-sans-v12-latin_cyrillic-700.eot');
   /* IE9 Compat Modes */
-  src: local(''),
+  src: local("PT Sans"),
     url('../fonts/pt-sans-v12-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */
     url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'),
@@ -41,12 +43,13 @@
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/roboto-v27-latin_cyrillic-regular.eot');
   /* IE9 Compat Modes */
-  src: local(''),
+  src: local("PT Sans"),
     url('../fonts/roboto-v27-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */
     url('../fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'),

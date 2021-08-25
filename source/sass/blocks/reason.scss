@@ -7,19 +7,35 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.reason__content {
+  padding-right: 25px;
+
+  @media (min-width: 768px) {
+    padding-right: 25px;
+    padding-left: 18px;
+  }
 }
 
 .reason__text {
   &--number-1 {
     background: #81b3d2;
-    padding: 55px 12px 40px;
+    padding: 0 40px 22px;
+    ;
     color: #ffffff;
     position: relative;
 
     @media (min-width: 768px) {
       grid-row: 1/1;
       grid-column: 1/2;
-      padding: 20px 65px 27px;
+      padding: 47px 68px 22px;
     }
 
     &::before {
@@ -28,7 +44,7 @@
         display: block;
         width: 320px;
         height: 37px;
-        background-image: url("../svg/white_copy.svg");
+        background-image: url("../img/white_copy.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 320px 37px;
@@ -41,19 +57,20 @@
 
   &--number-2 {
     background: #81b3d2;
-    padding: 40px 15px 35px;
+    padding: 40px 15px 23px;
     color: #ffffff;
 
     @media (min-width: 768px) {
       grid-row: 1/2;
       grid-column: 3/4;
+      padding: 0 40px 23px;
     }
   }
 
   &--number-3,
   &--number-4,
   &--number-5 {
-    padding: 40px 15px 35px;
+    padding: 24px 23px 14px;
     color: #000000;
   }
 
@@ -88,7 +105,12 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 1/2;
-      padding: 0 40px 17px;
+      padding: 13px 0px;
+    }
+
+    @media (min-width: 1200px) {
+      height: 250px;
+      padding: 13px 44px 8px;
     }
   }
 
@@ -98,7 +120,11 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 2/3;
-      padding: 0 40px 0;
+      padding: 13px 0 8px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 13px 66px 8px;
     }
   }
 
@@ -108,13 +134,19 @@
     @media (min-width: 768px) {
       grid-row: 3/4;
       grid-column: 3/4;
-      padding: 0 40px 0;
+      padding: 13px 0 8px;
+    }
+
+    @media (min-width: 1200px) {
+      grid-row: 3/4;
+      grid-column: 3/4;
+      padding: 13px 76px 8px;
     }
   }
 }
 
 .reason__detail {
-  margin-bottom: 36px;
+  margin-bottom: 22px;
   text-transform: uppercase;
   position: relative;
   text-align: left;
@@ -122,10 +154,34 @@
   justify-content: flex-end;
 
   @media (min-width: 768px) {
+    margin-bottom: 40px;
     flex-direction: column;
-    padding: 38px 30px 45px 29px;
+    padding: 17px 20px 15px 27px;
     text-align: center;
     justify-content: flex-start;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 19px 45px 27px;
+    margin-bottom: 53px;
+  }
+
+  &--house {
+    @media (min-width: 768px) {
+      grid-area: 2/1/3/2;
+    }
+  }
+
+  &--gift {
+    @media (min-width: 768px) {
+      grid-area: 2/3/3/4;
+    }
+  }
+
+  &--burger {
+    @media (min-width: 768px) {
+      grid-area: 2/2/3/3;
+    }
   }
 }
 
@@ -154,10 +210,13 @@
 }
 
 .reason__img {
-  padding-right: 10px;
+  padding-right: 8px;
+  margin-top: -67px;
+  margin-left: 20px;
 
   @media (min-width: 768px) {
     margin: 0 auto;
+    margin-bottom: -17px;
   }
 }
 
@@ -169,7 +228,7 @@
   position: relative;
 
   &--city {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 
     @media (max-width: 767px) {
       height: 260px;
@@ -191,6 +250,10 @@
       grid-row: 1/2;
       grid-column: 1/3;
     }
+  }
+
+  img {
+    width: 100%;
   }
 }
 

@@ -1,7 +1,7 @@
 .main-nav {
   position: absolute;
   width: auto;
-  height: 55px;
+  height: 56px;
   top: 0;
   right: 0;
   left: 0;
@@ -24,7 +24,6 @@
   display: block;
   width: 22px;
   height: 22px;
-
   position: absolute;
   top: 16px;
   right: 20px;
@@ -32,28 +31,28 @@
 }
 
 .main-nav--opened .main-nav__toggle::before {
-  background-image: url("../svg/icon-cross.svg");
+  background-image: url("../img/icon-cross.svg");
 }
 
 .main-nav--opened .main-nav__toggle:hover::before {
-  background-image: url("../svg/icon-cross-hover.svg");
+  background-image: url("../img/icon-cross-hover.svg");
 }
 
 .main-nav--opened .main-nav__toggle:active::before {
-  background-image: url("../svg/icon-cross-active.svg");
+  background-image: url("../img/icon-cross-active.svg");
 }
 
 
 .main-nav--closed .main-nav__toggle::before {
-  background-image: url("../svg/icon-menu.svg");
+  background-image: url("../img/icon-menu.svg");
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
-  background-image: url("../svg/icon-menu-hover.svg");
+  background-image: url("../img/icon-menu-hover.svg");
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-image: url("../svg/icon-menu-active.svg");
+  background-image: url("../img/icon-menu-active.svg");
 }
 
 @media (max-width: 767px) {
@@ -75,7 +74,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    height: 55px;
+    height: 56px;
   }
 }
 
@@ -161,7 +160,7 @@
 
 .main-nav__cover {
   background-color: #cccccc;
-  background-image: url("../svg/back-desktop.jpg");
+  background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
