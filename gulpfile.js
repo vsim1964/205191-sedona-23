@@ -1,11 +1,10 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require('gulp-sass')(require('sass'));
+const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
-const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const squoosh = require("gulp-libsquoosh");
@@ -159,7 +158,7 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
-  // optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
@@ -177,7 +176,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  // copyImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
