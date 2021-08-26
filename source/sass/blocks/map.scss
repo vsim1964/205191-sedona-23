@@ -14,8 +14,12 @@
     background-size: cover;
     margin-bottom: 0;
     top: 46%;
-    left: 49%;
+    left: 46%;
     border-radius: 15px;
+
+    @media (min-width: 768px) {
+      left: 49%;
+    }
   }
 
   img {

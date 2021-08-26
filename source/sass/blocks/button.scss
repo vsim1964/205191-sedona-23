@@ -13,7 +13,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 480px;
+    width: 460px;
     margin: 0 0 12px;
   }
 
@@ -30,7 +30,7 @@
     }
 
     @media (min-width: 1200px) {
-      margin-top: 38px;
+      margin-top: 50px;
     }
 
     &:hover {
@@ -53,7 +53,7 @@
 }
 
 p.button__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;

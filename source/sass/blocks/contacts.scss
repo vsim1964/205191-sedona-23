@@ -13,8 +13,7 @@
     }
   }
 
-  @media (min-width:1200x) {
-
+  @media (min-width: 1200px) {
     h2 {
       margin-bottom: 2px;
     }
@@ -120,7 +119,7 @@
 }
 
 .contacts__label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
