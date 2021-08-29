@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.hotels {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.hotels__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 0;
+
+  @media (min-width: 768px) {
+    padding: 59px 152px 53px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 57px 364px 54px;
+  }
+
+  p {
+    padding: 34px 38px 3px;
+  }
+}

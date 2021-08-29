@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+.network {
+  display: flex;
+}
+
+.network__link {
+  width: 46px;
+  height: 48px;
+  background: $main;
+  margin: 0 3px;
+  display: block;
+  position: relative;
+
+  &:hover {
+    background: $hover;
+  }
+
+  &:active {
+    background: $active;
+  }
+
+  &:active .network__img {
+    opacity: 0.3;
+  }
+}
+
+.network__icon {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

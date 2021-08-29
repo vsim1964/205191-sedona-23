@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.developer {
+  display: flex;
+}
+
+.developer__link {
+  width: 37px;
+  height: 35px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 35px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-size: 37px 35px;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    fill: #2e368f;
+  }
+
+  &:hover::after {
+    background-image: url("../img/htmlacademy-hover.svg");
+  }
+
+  &:active::after {
+    background-image: url("../svg/htmlacademy-active.svg");
+  }
+}

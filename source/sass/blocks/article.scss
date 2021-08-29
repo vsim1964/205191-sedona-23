@@ -1,0 +1,54 @@
+@import "variables.scss";
+
+.article {
+  position: relative;
+}
+
+.article__header {
+  margin-bottom: 11px;
+  text-transform: uppercase;
+  padding: 0 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 46px;
+  }
+}
+
+.article__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  &--big {
+    font-size: 21px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &--detail {
+    margin-bottom: 1em;
+    line-height: 16px;
+  }
+
+  &--br {
+    padding: 0 24px 0;
+  }
+}
+
+.article__number {
+  margin-top: -24px;
+  margin-bottom: 20px;
+}

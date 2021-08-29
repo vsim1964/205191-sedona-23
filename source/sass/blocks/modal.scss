@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.modal__failure {
+  display: none;
+  text-transform: uppercase;
+  position: absolute;
+  width: 320px;
+  height: 280px;
+  left: 0;
+  top: 1035px;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background: $white;
+  padding: 60px 40px 0;
+  line-height: initial;
+
+  button {
+    width: 180px;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 400px;
+    height: 347px;
+    left: 184px;
+    top: 1035px;
+    background: $white;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+    button {
+      width: 272px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    width: 400px;
+    height: 347px;
+    left: 440px;
+    top: 880px;
+    background: $white;
+    mix-blend-mode: normal;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+}
+
+.modal__success {
+  display: none;
+  text-transform: uppercase;
+  position: absolute;
+  width: 320px;
+  height: 323px;
+  left: 0;
+  top: 1359px;
+  background: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  line-height: initial;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 640px;
+    height: 347px;
+    left: 64px;
+    top: 890px;
+    background: $white;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    width: 640px;
+    height: 347px;
+    left: 319px;
+    top: 673px;
+    background: $white;
+    mix-blend-mode: normal;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+}
+
+.modal__text {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 20px 0;
+}
+
+.modal__header {
+  padding: 40px 40px 0;
+}
+
+.modal__button {
+  height: 98px;
+  background: $textarea;
+  padding: 20px;
+  margin-top: 89px;
+
+  @media (min-width: 768px) {
+    height: 146px;
+    padding: 44px;
+    margin-top: 66px;
+  }
+}
