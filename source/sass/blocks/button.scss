@@ -35,20 +35,20 @@
     }
 
     &:hover {
-      background: #669ec0;
+      background: $hover;
     }
 
     &:active {
-      background: #669ec0;
+      background: $active;
     }
 
     &:active[value] {
-      color: #ffffff;
+      color: $white;
       opacity: 0.3;
     }
 
     &:disabled {
-      background: #e5e5e5;
+      background: $form-bg;
     }
   }
 }
@@ -60,11 +60,11 @@
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   padding: 0;
 
   &:active {
-    color: #ffffff;
+    color: $white;
     opacity: 0.3;
   }
 }
