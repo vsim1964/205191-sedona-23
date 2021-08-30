@@ -15,12 +15,11 @@
   <header class="page__header page-header page-header--small">
     <div class="page-header__logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" width="187" height="97">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="102" height="84">
-        <img class=" page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны" width="102" height="84">
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны">
       </picture>
     </div>
-
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -38,16 +37,14 @@
     </nav>
     <div class="page-header__cover cover cover--small">
       <div class="cover__poster cover__poster--small"></div>
-
     </div>
   </header>
-
 
   <main class="main page__main">
     <form class="form" action="https://echo.htmlacademy.ru" name="reviews" id="reviews_id">
       <header class="form__header">
         <h1 class="visually-hidden">Страница с формами для отзывов посетителей Седоны</h1>
-        <h2 class="article__title article__title--big ">Оставьте свой отзыв</h2>
+        <h2 class="title title--big ">Оставьте свой отзыв</h2>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
 
@@ -94,19 +91,22 @@
           <label class="impression__label">
             <input class="impression__input" type="radio" form="reviews_id" checked name="impression_radio"
               value="Скорее положительное">
-            <div class="impression__radio"></div>
+            <span class="impression__radio">
+            </span>
             Скорее положительное
           </label>
           <label class="impression__label">
             <input class="impression__input" type="radio" form="reviews_id" name="impression_radio"
               value="Скорее отрицательное">
-            <div class="impression__radio"></div>
+            <span class="impression__radio">
+            </span>
             Скорее отрицательное
           </label>
           <label class="impression__label">
             <input class="impression__input" type="radio" form="reviews_id" name="impression_radio"
               value="Затрудняюсь ответить">
-            <div class="impression__radio"></div>
+            <span class="impression__radio">
+            </span>
             Затрудняюсь ответить
           </label>
         </div>
@@ -117,22 +117,22 @@
         <div class="visit__flex">
           <label class="visit__label">
             <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Мост Дьявола">
-            <div class="visit__checkbox"></div>
+            <span class="visit__checkbox"></span>
             Мост Дьявола
           </label>
           <label class="visit__label">
             <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Гора-Колокол">
-            <div class="visit__checkbox"></div>
+            <span class="visit__checkbox"></span>
             Гора-Колокол
           </label>
           <label class="visit__label">
             <input class="visit__input" type="checkbox" form="reviews_id" name="visit" checked value="Слайд-парк">
-            <div class="visit__checkbox"></div>
+            <span class="visit__checkbox"></span>
             Слайд-парк
           </label>
           <label class="visit__label">
             <input class="visit__input" type="checkbox" form="reviews_id" name="visit" value="Красные скалы">
-            <div class="visit__checkbox"></div>
+            <span class="visit__checkbox"></span>
             Красные скалы
           </label>
         </div>
@@ -141,13 +141,14 @@
       <fieldset class="form__fieldset description">
         <h2 class="form__title">Опишите свои эмоции:</h2>
         <label class="description__label">
-          <textarea class="description__textarea" form="reviews_id" name="description_text">Опишите подробно все свои восторги
-					</textarea>
+          <textarea class="description__textarea" form="reviews_id" name="description_text">
+            Опишите подробно все свои восторги
+          </textarea>
         </label>
       </fieldset>
       <fieldset class="form__fieldset submit">
-        <button class="button" type="submit">
-          <p class="button__text">Отправить отзыв</p>
+        <button class="button button__text" type="submit">
+          <p class="">Отправить отзыв</p>
           <span class="visually-hidden">Отправить отзыв</span>
         </button>
       </fieldset>
@@ -157,24 +158,24 @@
     <!-- Всплывающие окна -->
 
     <div class="modal modal__failure">
-      <h2 class="article__title--big">Что-то пошло <br> не так!</h2>
+      <h2 class="title--big">Что-то пошло <br> не так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button" type="button">
-        <p class="button__text">Ok</p>
+      <button class="button button__text" type="button">
+        Ok
         <span class="visually-hidden">Ok</span>
       </button>
     </div>
 
     <div class="modal modal__success">
       <div class="modal__header">
-        <h2 class="article__title--big">Ваш отзыв отправлен!</h2>
+        <h2 class="title--big">Ваш отзыв отправлен!</h2>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
           его
           на сайте.</p>
       </div>
       <div class="modal__button">
-        <button class="button button--form" type="button">
-          <p class="button__text">Закрыть окно</p>
+        <button class="button button--form button__text" type="button">
+          Закрыть окно
           <span class="visually-hidden">Закрыть окно</span>
         </button>
       </div>
@@ -212,24 +213,6 @@
       <a class="developer__link" href="https://htmlacademy.ru/"></a>
     </div>
   </footer>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
 
 </body>
 

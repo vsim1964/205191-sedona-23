@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .visit {
   margin-bottom: 10px;
 
@@ -21,7 +23,7 @@
         right: 0;
         width: 28%;
         height: 1px;
-        background: #dbdbdb;
+        background: $line;
       }
 
       &::after {
@@ -31,7 +33,7 @@
         left: 0;
         width: 28%;
         height: 1px;
-        background: #dbdbdb;
+        background: $line;
       }
     }
 
@@ -84,13 +86,13 @@
   position: relative;
   width: 54px;
   height: 54px;
-  background: #f2f2f2;
-  border: 5px solid #f2f2f2;
+  background: $form-input;
+  border: 5px solid $form-input;
   margin-right: 25px;
 
   &:hover {
-    background: #e5e5e5;
-    border: 5px solid #e5e5e5;
+    background: $form-bg;
+    border: 5px solid $form-bg;
   }
 }
 

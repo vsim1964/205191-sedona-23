@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .form {
   padding: 0 20px;
   margin-bottom: 62px;
@@ -20,7 +22,7 @@
 .form__header {
   padding: 0 0 20px;
   margin-bottom: 17px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $form-bg;
 
   p {
     padding-top: 30px;
@@ -43,7 +45,7 @@
 }
 
 .form__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -51,7 +53,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   mix-blend-mode: normal;
   margin-bottom: 18px;
 
@@ -63,9 +65,7 @@
 .form__fieldset {
   border: none;
   text-align: left;
-  // padding: 0 20px 20px;
-  // margin: 0 -20px 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $form-bg;
   position: relative;
 
   @media (min-width: 768px) {
@@ -81,7 +81,7 @@
 }
 
 .form__button {
-  background: #81b3d2;
+  background: $main;
   width: 100%;
   height: 58px;
   border: none;
@@ -92,7 +92,7 @@
   line-height: 58px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   cursor: pointer;
 
   @media (min-width: 768px) {
@@ -116,12 +116,12 @@
 }
 
 input[placeholder] {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
   mix-blend-mode: normal;
   display: flex;
   align-items: center;
