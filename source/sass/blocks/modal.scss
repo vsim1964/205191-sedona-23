@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .modal__failure {
   display: none;
   text-transform: uppercase;
@@ -7,7 +9,7 @@
   left: 0;
   top: 1035px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  background: #ffffff;
+  background: $white;
   padding: 60px 40px 0;
   line-height: initial;
 
@@ -21,7 +23,7 @@
     height: 347px;
     left: 184px;
     top: 1035px;
-    background: #ffffff;
+    background: $white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
     button {
@@ -35,7 +37,7 @@
     height: 347px;
     left: 440px;
     top: 880px;
-    background: #ffffff;
+    background: $white;
     mix-blend-mode: normal;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
@@ -49,7 +51,7 @@
   height: 323px;
   left: 0;
   top: 1359px;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   line-height: initial;
 
@@ -59,9 +61,8 @@
     height: 347px;
     left: 64px;
     top: 890px;
-    background: #ffffff;
+    background: $white;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-
   }
 
   @media (min-width: 1200px) {
@@ -70,7 +71,7 @@
     height: 347px;
     left: 319px;
     top: 673px;
-    background: #ffffff;
+    background: $white;
     mix-blend-mode: normal;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
@@ -84,13 +85,11 @@
 
 .modal__header {
   padding: 40px 40px 0;
-
-  @media (min-width: 768px) {}
 }
 
 .modal__button {
   height: 98px;
-  background: #f2f2f2;
+  background: $textarea;
   padding: 20px;
   margin-top: 89px;
 

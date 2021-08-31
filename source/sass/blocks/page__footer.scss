@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
 }
 
 .page-footer__tag {
-  padding: 83px 77px 0;
+  padding: 42px 38px 3px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;

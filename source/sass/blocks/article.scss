@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .article {
   position: relative;
 }
@@ -12,37 +14,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 32px;
-  }
-}
-
-.article__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 1.5em;
-
-  @media (min-width: 768px) {
-    font-size: 21px;
-    line-height: 30px;
-  }
-
-  &--big {
-    font-size: 21px;
-    margin-bottom: 0;
-
-    @media (min-width: 768px) {
-      font-size: 30px;
-    }
-  }
-
-  &--detail {
-    margin-bottom: 1em;
-    line-height: 16px;
-  }
-
-  &--br {
-    padding: 0 24px 0;
+    margin-bottom: 46px;
   }
 }
 

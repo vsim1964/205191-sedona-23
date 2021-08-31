@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .description {
   border-bottom: none;
   margin-bottom: 43px;
@@ -20,7 +22,7 @@
         right: 0;
         width: 28%;
         height: 1px;
-        background: #dbdbdb;
+        background: $line;
       }
 
       &::after {
@@ -30,7 +32,7 @@
         left: 0;
         width: 28%;
         height: 1px;
-        background: #dbdbdb;
+        background: $line;
       }
     }
   }
@@ -39,7 +41,7 @@
 .description__textarea {
   width: 100%;
   height: 160px;
-  background: #f2f2f2;
+  background: $textarea;
   border: none;
   padding: 16px 20px 0;
   font-family: "PT Sans", "Arial", sans-serif;

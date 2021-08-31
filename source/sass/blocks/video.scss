@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .video {
   width: 100%;
   position: relative;
@@ -15,7 +17,7 @@
 .video__header {
   padding: 0 26px 26px;
 
-  &>.article__title {
+  &>.title {
     font-size: 18px;
     margin-bottom: 1.5em;
   }
@@ -23,7 +25,7 @@
   @media (min-width: 768px) {
     padding: 0 125px 82px;
 
-    &>.article__title {
+    &>.title {
       font-size: 30px;
       margin-bottom: 1em;
     }
@@ -79,7 +81,7 @@
 .video__seek-bar {
   grid-area: 1/1/2/5;
   height: 45px;
-  background: #000000;
+  background: $black;
   opacity: 0.6;
   position: relative;
 
@@ -125,13 +127,13 @@
 .video__reload {
   grid-area: 2/1/3/2;
   height: 65px;
-  background: #f2f2f2;
+  background: $form-input;
   border: none;
 
   @media (min-width: 768px) {
     grid-area: 1/1/2/2;
     height: 95px;
-    background: #000000;
+    background: $black;
     opacity: 0.6;
   }
 
@@ -143,7 +145,7 @@
 .video__empty {
   grid-area: 2/2/3/3;
   height: 65px;
-  background: #f2f2f2;
+  background: $form-input;
   border: none;
 
   @media (min-width: 768px) {
@@ -154,13 +156,13 @@
 .video__subtitles {
   grid-area: 2/3/3/4;
   height: 65px;
-  background: #f2f2f2;
+  background: $form-input;
   border: none;
 
   @media (min-width: 768px) {
     grid-area: 1/3/2/4;
     height: 95px;
-    background: #000000;
+    background: $black;
     opacity: 0.6;
   }
 
@@ -172,13 +174,13 @@
 .video__full-screen {
   grid-area: 2/4/3/5;
   height: 65px;
-  background: #f2f2f2;
+  background: $form-input;
   border: none;
 
   @media (min-width: 768px) {
     grid-area: 1/4/2/5;
     height: 95px;
-    background: #000000;
+    background: $black;
     opacity: 0.6;
   }
 
@@ -204,9 +206,9 @@
 .video__icon {
   width: 32px;
   height: 20px;
-  fill: #5c6870;
+  fill: $video_icon;
 
   @media (min-width: 768px) {
-    fill: #ffffff;
+    fill: $white;
   }
 }
