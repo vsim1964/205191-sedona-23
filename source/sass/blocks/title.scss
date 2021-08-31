@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  &--big {
+    font-size: 21px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &--detail {
+    margin-bottom: 1em;
+    line-height: 16px;
+  }
+
+  &--br {
+    padding: 0 24px 0;
+  }
+}

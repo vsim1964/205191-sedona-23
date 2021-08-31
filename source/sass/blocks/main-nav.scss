@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .main-nav {
   position: absolute;
   width: auto;
@@ -96,7 +98,7 @@
     line-height: 50px;
     left: 0;
     top: 0;
-    background: #81b3d2;
+    background: $main;
 
     &:nth-child(3) {
       display: none;
@@ -122,13 +124,13 @@
 
 .main-nav__gradient {
   height: 7px;
-  background: #81b3d2 linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: $main linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .main-nav__link {
 
   &:hover {
-    color: #81b3d2;
+    color: $main;
   }
 
   &:active {
@@ -139,27 +141,27 @@
   @media (max-width: 767px) {
     font-size: 18px;
     font-weight: bold;
-    color: #ffffff;
+    color: $white;
 
     &:hover {
-      background: #669ec0;
-      color: #ffffff;
+      background: $hover;
+      color: $white;
     }
 
     &:active {
-      background: #5496bd;
-      color: #ffffff;
+      background: $active;
+      color: $white;
       opacity: 0.3;
     }
   }
 
   &--current {
-    color: #766357;
+    color: $current;
   }
 }
 
 .main-nav__cover {
-  background-color: #cccccc;
+  background-color: $main-nav;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
