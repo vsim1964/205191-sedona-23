@@ -11,36 +11,79 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png"> <!-- 152×152 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/fonts/pt-sans-v12-latin_cyrillic-regular.woff2" as="font">
 </head>
 
 <body class="page">
 
-  <header class="page__header page-header page-header--big">
-    <div class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-        <img class="page-header__logo" src="img/logotype-mobile.svg" alt="Логотип Седоны">
-      </picture>
-    </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
+  <header class="page__header page-header page-header--small">
+
+    <nav class="main-nav main-nav__closed">
+      <button class=" main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--1"><a
-            class="maingit branch -m novoje-imia-nav__link main-nav__link--current" href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
-        <li class="main-nav__item"></li>
-        <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-        <li class="main-nav__item main-nav__item--5"><a class="main-nav__link" href="https://htmlacademy.ru">HTML
+        <li class="main-nav__item main-nav__item--closed main-nav__item--1">
+          <a class="main-nav__link main-nav__link--closed" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--closed main-nav__item--2"><a
+            class="main-nav__link main-nav__link--closed main-nav__link--current" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item main-nav__item--closed">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+                <img class="page-header__logo" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+              </picture>
+            </a>
+          </div>
+        </li>
+        <li class="main-nav__item main-nav__item--closed main-nav__item--4"><a
+            class="main-nav__link main-nav__link--closed" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item main-nav__item--closed main-nav__item--5"><a
+            class="main-nav__link main-nav__link--closed" href="https://htmlacademy.ru">HTML
             Academy</a></li>
         <li class="main-nav__gradient"></li>
       </ul>
     </nav>
+
+    <nav class="main-nav main-nav__opened">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__list--opened">
+        <li class="main-nav__item main-nav__item--opened main-nav__item--1"><a class="main-nav__link"
+            href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--2"><a
+            class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item main-nav__item--opened">
+          <div class="page-header__logo">
+            <a class="page-header__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+                <img class="page-header__logo" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+              </picture>
+            </a>
+          </div>
+        </li>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--4"><a class="main-nav__link"
+            href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--5"><a class="main-nav__link"
+            href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+      </ul>
+    </nav>
+
     <div class="page-header__cover cover cover--big">
       <div class="cover__poster cover__poster--big"></div>
     </div>
+
   </header>
 
   <main class="page__main">
@@ -191,6 +234,7 @@
           <svg class="network__icon">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
+          <span class="visually-hidden">Сллыка на Твиттер Седоны</span>
         </a>
       </li>
       <li>
@@ -198,6 +242,7 @@
           <svg class="network__icon">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
+          <span class="visually-hidden">Сллыка на Фейсбук Седоны</span>
         </a>
       </li>
       <li>
@@ -205,12 +250,14 @@
           <svg class="network__icon">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
+          <span class="visually-hidden">Сллыка на Ю-туб-канал Седоны</span>
         </a>
       </li>
     </ul>
     <div class="page-footer__developer developer">
       <p class="developer__text">Разработано</p>
       <a class="developer__link" href="https://htmlacademy.ru/"></a>
+      <span class="visually-hidden">Сллыка на разработчика сайта Седоны компанию "HTML Аcаdemy</span>
     </div>
   </footer>
 

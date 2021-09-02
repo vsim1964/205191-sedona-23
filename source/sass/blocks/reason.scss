@@ -270,3 +270,13 @@
     width: 75px;
   }
 }
+
+.icon-house {
+  width: 39px;
+  height: 37px;
+
+  @media (min-width: 768px) {
+    width: 75px;
+    height: 72px;
+  }
+}
