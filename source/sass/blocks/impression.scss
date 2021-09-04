@@ -48,12 +48,13 @@
 .impression__radio {
   display: inline-block;
   position: relative;
-  width: 54px;
+  min-width: 54px;
   height: 54px;
   background: $form-input;
   border: 5px solid $form-input;
   border-radius: 50%;
   margin-right: 27px;
+
 
   &:hover {
     background: $form-bg;

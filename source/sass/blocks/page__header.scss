@@ -10,27 +10,12 @@
 
   @media (min-width: 1200px) {
     margin-bottom: 55px;
+
   }
 }
 
-.page-header__logo {
-  position: relative;
-  z-index: 1000;
-  margin-top: 41px;
 
-  @media (min-width: 768px) {
-    margin-top: 29px;
-  }
 
-  @media (min-width: 1200px) {
-    margin-top: 41px;
-  }
-
-  img {
-    margin: 0 auto;
-  }
-}
-
-.page-header__cover {
-  // margin-top: 56px;
+.page-top {
+  margin-top: 0;
 }

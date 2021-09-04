@@ -227,6 +227,7 @@
   padding-left: 37px;
   padding-top: 10px;
   padding-bottom: 16px;
+  color: $white;
 
   @media (min-width: 768px) {
     grid-area: 1/2/3/3;
@@ -246,7 +247,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    background-image: url("../img/like-icon-tablet.svg");
+    background-image: url("../img/svg/like-icon-tablet.svg");
     background-repeat: no-repeat;
     background-position: center center;
     top: 6px;
@@ -257,7 +258,7 @@
     }
 
     @media (min-width: 1200px) {
-      background-image: url("../img/like-icon-desktop.svg");
+      background-image: url("../img/svg/like-icon-desktop.svg");
     }
   }
 }

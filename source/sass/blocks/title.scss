@@ -29,3 +29,10 @@
     padding: 0 24px 0;
   }
 }
+
+
+.title--search {
+  @media (max-width: 768px) {
+    margin-bottom: 8px;
+  }
+}

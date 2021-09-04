@@ -5,81 +5,146 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Отзывы о путешествии в Седону (Аризона, США)</title>
+  <title>Фото и видео о путешествии в Седону (Аризона, США)</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png"> <!-- 152×152 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="/fonts/pt-sans-v12-latin_cyrillic-regular.woff2" as="font">
 </head>
 
 <body class="page">
 
-  <header class="page__header page-header page-header--small">
+  <header class="page__header page-header page-header--small main-nav main-nav-js">
 
-    <nav class="main-nav main-nav__closed">
-      <button class=" main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <!-- ! JS отключен. Менб открыто, кнопки скрыты  класс main-nav__no-js display: block ПО УМОЛЧАНИЮ-->
+    <nav class="main-nav__opened main-nav__no-js">
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--closed main-nav__item--1">
-          <a class="main-nav__link main-nav__link--closed" href="index.html">Главная</a>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--1">
+          <a class="main-nav__link main-nav__link--opened" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item main-nav__item--closed main-nav__item--2"><a
-            class="main-nav__link main-nav__link--closed main-nav__link--current" href="catalog.html">Фото и видео</a>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--2"><a
+            class="main-nav__link main-nav__link--opened main-nav__link--current" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="main-nav__item main-nav__item--closed">
-          <div class="page-header__logo">
-            <a class="page-header__logo-link" href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
-                <img class="page-header__logo" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
-              </picture>
-            </a>
-          </div>
+        <li class="main-nav__item main-nav__item--opened">
+          <a class="page-header__logo page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+              <img class="page-header__logo" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+            </picture>
+          </a>
         </li>
-        <li class="main-nav__item main-nav__item--closed main-nav__item--4"><a
-            class="main-nav__link main-nav__link--closed" href="form.html">Форма отзыва</a>
+        <li class="main-nav__item main-nav__item--opened main-nav__item--4"><a
+            class="main-nav__link main-nav__link--opened" href="form.html">Форма отзыва</a>
         </li>
-        <li class="main-nav__item main-nav__item--closed main-nav__item--5"><a
-            class="main-nav__link main-nav__link--closed" href="https://htmlacademy.ru">HTML
+        <li class="main-nav__item main-nav__item--opened main-nav__item--5"><a
+            class="main-nav__link main-nav__link--opened" href="https://htmlacademy.ru">HTML
             Academy</a></li>
         <li class="main-nav__gradient"></li>
       </ul>
     </nav>
-
-    <nav class="main-nav main-nav__opened">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list main-nav__list--opened">
-        <li class="main-nav__item main-nav__item--opened main-nav__item--1"><a class="main-nav__link"
-            href="index.html">Главная</a>
+    <nav class="main-nav__closed main-nav__no-js">
+      <ul class="main-nav__list main-nav__list--closed">
+        <li class="main-nav__item main-nav__item--closed main-nav__item--1"><a
+            class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item main-nav__item--opened main-nav__item--2"><a
+        <li class="main-nav__item main-nav__item--closed main-nav__item--2"><a
             class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a></li>
-        <li class="main-nav__item main-nav__item--opened">
-          <div class="page-header__logo">
-            <a class="page-header__logo-link" href="index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
-                <img class="page-header__logo" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
-              </picture>
-            </a>
-          </div>
+        <li class="main-nav__item main-nav__item--closed main-nav__item--3">
+          <a class="main-nav__logo main-nav__width" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+              <img class="main-nav__logo-img" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+            </picture>
+          </a>
         </li>
-        <li class="main-nav__item main-nav__item--opened main-nav__item--4"><a class="main-nav__link"
+        <li class="main-nav__item main-nav__item--closed main-nav__item--4"><a class="main-nav__link"
             href="form.html">Форма отзыва</a>
         </li>
-        <li class="main-nav__item main-nav__item--opened main-nav__item--5"><a class="main-nav__link"
+        <li class="main-nav__item main-nav__item--closed main-nav__item--5"><a class="main-nav__link"
             href="https://htmlacademy.ru">HTML
             Academy</a></li>
       </ul>
     </nav>
 
-    <div class="page-header__cover cover cover--small">
-      <div class="cover__poster cover__poster--small"></div>
-    </div>
+    <!-- ! JS включен. Меню скрыто,  класс main-nav__js display: none по умолчанию .-->
 
+
+    <!-- ! ЗАКРЫТОЕ МЕНЮ ПРИ ВКЛЮЧЕННОМ JS  по умолчанию display:block-->
+    <nav class="main-nav-js--burger main-nav-js">
+      <a class="main-nav-js__logo main-nav__width main-nav-js__logo--disabled" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+          <img class="main-nav-js__img" src="img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+        </picture>
+      </a>
+      <button class="main-nav-js__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+
+      <ul class="main-nav-js__list">
+        <li class="main-nav-js__item main-nav-js__item--1 main-nav-js__list--disabled"><a
+            class="main-nav-js__link main-nav-js__link--current" href="index.html">Главная</a></li>
+        <li class="main-nav-js__item main-nav-js__item--2 main-nav-js__list--disabled"><a
+            class="main-nav__link main-nav-js__link--current" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav-js__item main-nav-js__list--disabled">
+          <a class="main-nav-js__logo main-nav-js__width" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+              <img class="main-nav-js__img" src=" img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+            </picture>
+          </a>
+        </li>
+        <li class="main-nav-js__item main-nav-js__item--4 main-nav-js__list--disabled"><a class="main-nav-js__link"
+            href="form.html">Форма отзыва</a></li>
+        <li class="main-nav-js__item main-nav-js__item--5 main-nav-js__list--disabled"><a class="main-nav-js__link"
+            href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+        <li class="main-nav-js__gradient main-nav-js__list--disabled"></li>
+      </ul>
+    </nav>
+
+    <!-- ! ОТКРЫТОЕ МЕНЮ ПРИ ВКЛЮЧЕННОМ JS по умолчанию display:none-->
+
+    <nav class="main-nav-js--cross main-nav-js">
+      <button class="main-nav-js__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav-js__list">
+        <li class="main-nav-js__item main-nav-js__item--1"><a class="main-nav-js__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav-js__item main-nav-js__item--2"><a class="main-nav-js__link main-nav-js__link--current"
+            href="catalog.html">Фото и
+            видео</a></li>
+        <li class="main-nav-js__item main-nav-js__list--disabled">
+          <a class="main-nav-js__logo main-nav-js__width" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+              <img class="main-nav-js__img" src=" img/svg/logotype-mobile.svg" alt="Логотип Седоны">
+            </picture>
+          </a>
+        </li>
+        <li class="main-nav-js__item main-nav-js__item--4"><a class="main-nav-js__link" href="form.html">Форма
+            отзыва</a></li>
+        <li class="main-nav-js__item main-nav-js__item--5"><a class="main-nav-js__link"
+            href="https://htmlacademy.ru">HTML
+            Academy</a></li>
+        <li class="main-nav-js__gradient"></li>
+      </ul>
+    </nav>
+
+
+    <div class="page-header__cover cover cover--big">
+      <div class="cover__poster cover__poster--big"></div>
+    </div>
   </header>
 
   <main class="main page__main">
@@ -94,78 +159,86 @@
       </div>
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--number-1">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/road-desktop.webp 1x, img/road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
-            <img src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Седону">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/road-desktop.webp 1x, img/road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
+              <img src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Седону">
+            </picture>
+          </a>
           <div class="gallery__background"></div>
           <div class="gallery__text gallery__text--top">
             <p class="gallery__caption">Неродные просторы</p>
             <p class="gallery__author">Автор фото: Борис</p>
-            <p class="gallery__like gallery__like--top ">1350</p>
+            <a class="gallery__like gallery__like--top ">1350</a>
           </div>
           <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-2">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/cactus-desktop.webp 1x, img/cactus-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/cactus-tablet.webp 1x, img/cactus-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/cactus-mobile.webp 1x, img/cactus-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/cactus-desktop.jpg 1x, img/cactus-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/cactus-tablet.jpg 1x, img/cactus-tablet@2x.jpg 2x">
-            <img src="img/cactus-mobile.jpg" srcset="img/cactus-mobile@2x.jpg 2x" alt="Дорога на Седону">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/cactus-desktop.webp 1x, img/cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cactus-tablet.webp 1x, img/cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cactus-mobile.webp 1x, img/cactus-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/cactus-desktop.jpg 1x, img/cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/cactus-tablet.jpg 1x, img/cactus-tablet@2x.jpg 2x">
+              <img src="img/cactus-mobile.jpg" srcset="img/cactus-mobile@2x.jpg 2x" alt="Дорога на Седону">
+            </picture>
+          </a>
           <div class="gallery__background gallery__background--bottom"></div>
           <div class="gallery__text gallery__text--bottom">
             <p class="gallery__caption">Местная растительность</p>
             <p class="gallery__author">Автор фото: Сергей</p>
-            <p class="gallery__like">143</p>
+            <a class="gallery__like">143</a>
           </div>
           <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-3">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/road2-desktop.webp 1x, img/road2-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/road2-tablet.webp 1x, img/road2-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/road2-mobile.webp 1x, img/road2-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/road2-desktop.jpg 1x, img/road2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/road2-tablet.jpg 1x, img/road2-tablet@2x.jpg 2x">
-            <img src="img/road2-mobile.jpg" srcset="img/road2-mobile@2x.jpg 2x" alt="Дорога на Седону">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/road2-desktop.webp 1x, img/road2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/road2-tablet.webp 1x, img/road2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/road2-mobile.webp 1x, img/road2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/road2-desktop.jpg 1x, img/road2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/road2-tablet.jpg 1x, img/road2-tablet@2x.jpg 2x">
+              <img src="img/road2-mobile.jpg" srcset="img/road2-mobile@2x.jpg 2x" alt="Дорога на Седону">
+            </picture>
+          </a>
           <div class="gallery__background gallery__background--bottom"></div>
           <div class="gallery__text gallery__text--bottom gallery__text--darcen">
             <p class="gallery__caption">Дорога на Север</p>
             <p class="gallery__author">Автор фото: Петр</p>
-            <p class="gallery__like">96</p>
+            <a class="gallery__like">96</a>
           </div>
           <div class="gallery__divider"></div>
         </li>
         <li class="gallery__item gallery__item--number-4">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/bridge2-desktop.webp 1x, img/bridge2-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/bridge2-tablet.webp 1x, img/bridge2-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bridge2-mobile.webp 1x, img/bridge2-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/bridge2-desktop.jpg 1x, img/bridge2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/bridge2-tablet.jpg 1x, img/bridge2-tablet@2x.jpg 2x">
-            <img src="img/bridge2-mobile.jpg" srcset="img/bridge2-mobile@2x.jpg 2x" alt="Дорога на Седону">
-          </picture>
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/bridge2-desktop.webp 1x, img/bridge2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/bridge2-tablet.webp 1x, img/bridge2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bridge2-mobile.webp 1x, img/bridge2-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/bridge2-desktop.jpg 1x, img/bridge2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bridge2-tablet.jpg 1x, img/bridge2-tablet@2x.jpg 2x">
+              <img src="img/bridge2-mobile.jpg" srcset="img/bridge2-mobile@2x.jpg 2x" alt="Дорога на Седону">
+            </picture>
+          </a>
           <div class="gallery__background gallery__background--bottom"></div>
           <div class="gallery__text  gallery__text--bottom">
             <p class="gallery__caption">Мост Дьявола</p>
             <p class="gallery__author">Автор фото: Антон</p>
-            <p class="gallery__like">254</p>
+            <a class="gallery__like">254</a>
           </div>
           <div class="gallery__divider"></div>
         </li>
@@ -189,7 +262,7 @@
           <img src="img/poster-mobile.jpg" srcset="img/poster-mobile@2x.jpg 2x" alt="Дорога на Седону">
         </picture>
         <form class="video__controls controls">
-          <label class="video__seek-bar">
+          <button class="video__seek-bar">
             <svg class="video__icon-seek-bar">
               <use xlink:href="img/sprite.svg#volume_scale"></use>
             </svg>
@@ -197,7 +270,7 @@
               <use xlink:href="img/sprite.svg#volume_slider"></use>
             </svg>
             <span class="visually-hidden">Пропустить кадры</span>
-          </label>
+          </button>
           <button class="video__reload" type="button">
             <svg class="video__icon">
               <use xlink:href="img/sprite.svg#replay"></use>
