@@ -8,9 +8,14 @@
   width: 46px;
   height: 48px;
   background: $main;
-  margin: 0 3px;
   display: block;
   position: relative;
+  margin: -6px 11px 0 -4px;
+
+  @media (min-width: 1200px) {
+    padding: -3px 4px 0 3px;
+  }
+
 
   &:hover {
     background: $hover;
@@ -23,6 +28,10 @@
   &:active .network__img {
     opacity: 0.3;
   }
+}
+
+.page-footer__list:last-child {
+  margin-right: -6px;
 }
 
 .network__icon {

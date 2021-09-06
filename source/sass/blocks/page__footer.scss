@@ -14,7 +14,7 @@
 }
 
 .page-footer__tag {
-  padding: 42px 38px 3px;
+  padding: 38px 38px 3px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -25,11 +25,17 @@
 
   @media (min-width: 768px) {
     padding: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin-left: -12px;
   }
 }
 
 .page-footer__list {
-  margin: 32px 0 40px;
+  margin: 37px 0 41px;
 
   @media (min-width: 768px) {
     margin: 0;

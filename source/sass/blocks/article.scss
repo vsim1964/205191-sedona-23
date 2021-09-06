@@ -5,20 +5,76 @@
 }
 
 .article__header {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
   text-transform: uppercase;
   padding: 0 25px;
 
   @media (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 46px;
+    margin-bottom: 42px;
   }
 }
 
-.article__number {
-  margin-top: -24px;
-  margin-bottom: 20px;
+.article__number--town {
+  padding: 7px 0 13px;
+
+  @media (min-width: 768px) {
+    padding: 11px 0 19px;
+  }
+
+
+  @media (min-width: 1200px) {
+    padding: 11px 0 19px;
+  }
+}
+
+.article__number--bridge {
+  padding: 9px 0 11px 0;
+
+  @media (min-width: 768px) {
+    padding: 1px 0 17px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 0 20px 0;
+  }
+}
+
+.article__number--squear {
+  padding: 8px 0 5px;
+
+  @media (min-width: 768px) {
+    padding: 8px 0 13px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px 0 13px;
+  }
+}
+
+.article__number--road {
+  padding: 8px 0 14px;
+
+  @media (min-width: 768px) {
+    padding: 8px 0 21px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px 0 21px;
+  }
+}
+
+.article__number--visitors {
+  padding: 10px 0 12px;
+
+  @media (min-width: 768px) {
+    padding: 8px 0 21px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px 0 21px;
+  }
 }

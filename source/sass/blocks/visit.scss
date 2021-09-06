@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .visit {
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 
   @media (min-width: 768px) {
     grid-row: 4/5;
@@ -10,7 +10,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 56px;
+    margin-bottom: 47px;
   }
 
 
@@ -38,7 +38,7 @@
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 52px;
+      margin-bottom: 41px;
     }
   }
 }
@@ -59,7 +59,7 @@
   position: relative;
   cursor: pointer;
   align-items: center;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
   font-weight: 700;
   text-transform: initial;
   font-size: 18px;

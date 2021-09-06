@@ -1,17 +1,15 @@
 @import "variables.scss";
 
 .cover {
-  // position: absolute;
-  // z-index: 100;
+  margin-top: 5px;
 
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 
-  // @media (min-width: 768px) {
-  //   margin-top: -30px;
-  // }
-
-  // @media (min-width: 1200px) {
-  //   margin-top: -40px;
-  // }
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
 
   &--big {
     height: 390px;
@@ -38,19 +36,19 @@
   &::after {
     content: "";
     display: block;
-    width: 1200px;
+    width: 320px;
     height: 57px;
     background-image: url("../img/svg/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
-    background-size: 600px 58px;
+    background-size: 320px 57px;
     position: absolute;
     bottom: 0;
     margin: 0 auto;
 
     @media (min-width: 768px) {
       width: 768px;
-      background-size: 1200px 58px;
+      background-size: 1200px 57px;
     }
 
     @media (min-width: 1200px) {
@@ -162,7 +160,7 @@
     background-image: url("../img/svg/text-index.svg");
     background-repeat: no-repeat;
     background-position: 50% 87px;
-    background-size: 282px 214px;
+    background-size: 281px 224px;
     position: absolute;
     margin: 0 auto;
 

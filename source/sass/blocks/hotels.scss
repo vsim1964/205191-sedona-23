@@ -9,10 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px 0;
+  padding: 33px 20px 0;
 
   @media (min-width: 768px) {
-    padding: 59px 152px 53px;
+    padding: 56px 147px 45px;
   }
 
   @media (min-width: 1200px) {
@@ -23,7 +23,11 @@
     padding: 10px 0 3px;
 
     @media (min-width: 768px) {
-      padding: 34px 38px 3px;
+      padding: 34px 39px 37px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 32px 27px 0;
     }
   }
 }

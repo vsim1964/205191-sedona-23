@@ -20,7 +20,13 @@
     border-radius: 15px;
 
     @media (min-width: 768px) {
+      left: 48%;
+      top: 47%;
+    }
+
+    @media (min-width: 1200px) {
       left: 49%;
+
     }
   }
 

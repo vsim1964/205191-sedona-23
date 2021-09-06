@@ -17,9 +17,9 @@
 
 <body class="page">
 
-  <header class="page__header page-header page-header--small main-nav main-nav-js">
+  <header class="page__header page-header main-nav main-nav-js">
 
-    <!-- ! JS отключен. Менб открыто, кнопки скрыты  класс main-nav__no-js display: block ПО УМОЛЧАНИЮ-->
+    <!-- ! JS отключен. Меню открыто, кнопки скрыты  класс main-nav__no-js display: block ПО УМОЛЧАНИЮ-->
     <nav class="main-nav__opened main-nav__no-js">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--opened main-nav__item--1">
@@ -152,16 +152,16 @@
 
     <article class="page-article article">
       <header class="article__header">
-        <h2 class="title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
+        <h2 class="title title__index">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </header>
       <ul class="article-list reason">
         <li class="reason__item reason__item--number-1">
           <div class="reason__grid reason__grid--number-1">
             <div class="reason__text reason__text--number-1">
-              <h2 class="title title--br">Настоящий городок</h2>
-              <p class="article__number">&#8212; №1 &#8212;</p>
-              <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <h2 class="title title--town">Настоящий городок</h2>
+              <p class="article__number article__number--town">&#8212; №1 &#8212;</p>
+              <p class="reason__text reason__text--town">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason__img-box  reason__img-box--city">
               <a href="#">
@@ -174,39 +174,39 @@
                   <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
                   <img src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x" alt="Улица Седоны" width="320"
-                    height="260">
+                    height="256">
                 </picture>
               </a>
             </div>
             <div class="reason__detail reason__detail--house">
               <div class="reason__img">
-                <svg class="reason__icon">
+                <svg class="reason__icon reason__icon--house">
                   <use xlink:href="img/sprite.svg#icon-house"></use>
                 </svg>
               </div>
-              <div class="reason__content">
+              <div class="reason__content reason__content--house">
                 <h2 class="title title--detail">Жилье</h2>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
               </div>
             </div>
             <div class="reason__detail reason__detail--gift">
               <div class="reason__img">
-                <svg class="reason__icon">
+                <svg class="reason__icon reason__icon--gift">
                   <use xlink:href="img/sprite.svg#icon-gift"></use>
                 </svg>
               </div>
-              <div class="reason__content">
+              <div class="reason__content reason__content--gift">
                 <h2 class="title title--detail">Сувениры</h2>
                 <p>Не только китайского, но и местного производства!</p>
               </div>
             </div>
             <div class="reason__detail reason__detail--burger">
               <div class="reason__img">
-                <svg class="reason__icon">
+                <svg class="reason__icon reason__icon--burger">
                   <use xlink:href="img/sprite.svg#icon-burger"></use>
                 </svg>
               </div>
-              <div class="reason__content">
+              <div class="reason__content reason__content--burger">
                 <h2 class="title title--detail">Еда</h2>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </div>
@@ -217,9 +217,9 @@
         <li class="reason__item reason__item--number-2">
           <div class="reason__grid reason__grid--number-2">
             <div class="reason__text reason__text--number-2">
-              <h2 class="title title--br">Там есть Мост Дьявола</h2>
-              <p class="article__number">&#8212; №2 &#8212;</p>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <h2 class="title title--bridge">Там есть Мост Дьявола</h2>
+              <p class="article__number article__number--bridge">&#8212; №2 &#8212;</p>
+              <p class="reason__bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reason__img-box reason__img-box--bridge">
               <a href="#">
@@ -232,7 +232,7 @@
                   <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
                   <img src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола" width="320"
-                    height="260">
+                    height="256">
                 </picture>
               </a>
             </div>
@@ -241,25 +241,28 @@
 
         <li class="reason__item reason__item--number-3">
           <div class="reason__text reason__text--number-3">
-            <h2 class="title title--br">Небольшая площадь</h2>
-            <p class="article__number">&#8212; №3 &#8212;</p>
-            <p>Все интересные места находятся очень близко</p>
+            <h2 class="title title--br title__squear">Небольшая площадь</h2>
+            <p class="article__number article__number--squear">&#8212; №3 &#8212;</p>
+            <p class="reason__square">Все интересные места находятся очень близко</p>
           </div>
         </li>
+
         <li class="reason__item reason__item--number-4">
           <div class="reason__text  reason__text--number-4">
-            <h2 class="title title--br">Красивая дорога</h2>
-            <p class="article__number">&#8212; №4 &#8212;</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h2 class="title title--br title__road">Красивая дорога</h2>
+            <p class="article__number article__number--road">&#8212; №4 &#8212;</p>
+            <p class="reason__road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
+
         <li class="reason__item reason__item--number-5">
           <div class="reason__text  reason__text--number-5">
-            <h2 class="title title--br">Мало туристов</h2>
-            <p class="article__number">&#8212; №5 &#8212;</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <h2 class="title title--br title__visitors">Мало туристов</h2>
+            <p class="article__number article__number--visitors">&#8212; №5 &#8212;</p>
+            <p class="reason__visitors">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
+
       </ul>
     </article>
 
@@ -268,7 +271,7 @@
         <h2 class="title title--big title--search">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам
           лучшие предложения гостиниц в Седоне</p>
-        <button class="button button--mini button__text" type="button">
+        <button class="button button--mini button__text button__text--hotels" type="button">
           Найти гостиницу
           <span class="visually-hidden">Найти гостиницу</span>
         </button>
@@ -313,7 +316,7 @@
         </a>
       </li>
       <li>
-        <a class="network__link" href="#">
+        <a class="network__link network__link--youtube" href="#">
           <svg class="network__icon">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
