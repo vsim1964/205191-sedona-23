@@ -63,7 +63,7 @@
   }
 }
 
-.impression__input:checked+.impression__radio::after {
+.impression__input:checked + .impression__radio::after {
   content: "";
   position: absolute;
   top: 14px;

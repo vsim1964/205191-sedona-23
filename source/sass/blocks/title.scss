@@ -61,7 +61,7 @@
   }
 }
 
-.title__road {
+.title--road {
   @media (min-width: 768px) {
     padding: 0 40px;
   }
@@ -71,7 +71,7 @@
   }
 }
 
-.title__visitors {
+.title--visitors {
   @media (min-width: 768px) {
     padding: 0 50px;
   }
@@ -90,7 +90,7 @@
   }
 }
 
-.title__index {
+.title--index {
   margin-bottom: 29px;
 
   @media (min-width: 768px) {

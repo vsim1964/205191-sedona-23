@@ -134,7 +134,6 @@
 }
 
 .main-nav-js__link {
-
   &:hover {
     color: $main;
   }
@@ -181,4 +180,8 @@
   @media (min-width: 768px) {
     background-position: center top;
   }
+}
+
+.main-nav-js__link--opened.main-nav-js__link--current {
+  color: $current;
 }

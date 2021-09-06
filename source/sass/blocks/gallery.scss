@@ -21,7 +21,7 @@
     margin-bottom: 79px;
     padding: 0 109px;
 
-    &>.title {
+    & > .title {
       font-size: 30px;
       margin-bottom: 1em;
     }
@@ -227,12 +227,16 @@
   padding-left: 37px;
   padding-top: 10px;
   padding-bottom: 16px;
-  color: $white;
+  color: $black;
 
   @media (min-width: 768px) {
     grid-area: 1/2/3/3;
     align-self: end;
     line-height: 55px;
+  }
+
+  @media (min-width: 1200px) {
+    color: $white;
   }
 
   &--top {

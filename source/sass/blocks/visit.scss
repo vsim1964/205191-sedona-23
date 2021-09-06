@@ -13,7 +13,6 @@
     margin-bottom: 47px;
   }
 
-
   h2 {
     @media (min-width: 768px) {
       &::before {
@@ -96,7 +95,7 @@
   }
 }
 
-.visit__input:checked+.visit__checkbox::after {
+.visit__input:checked + .visit__checkbox::after {
   content: "";
   display: block;
   position: absolute;

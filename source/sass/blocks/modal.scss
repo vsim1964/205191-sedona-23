@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-.modal__failure {
+.modal-failure {
   display: none;
   text-transform: uppercase;
   position: absolute;
@@ -43,7 +43,7 @@
   }
 }
 
-.modal__success {
+.modal-success {
   display: none;
   text-transform: uppercase;
   position: absolute;
